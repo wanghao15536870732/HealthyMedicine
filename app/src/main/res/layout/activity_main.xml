@@ -11,82 +11,79 @@
     app:edMenuSize="300dp"
     app:edMenuBackground="#dddddd">
 
-    <RelativeLayout
-        android:id="@+id/container"
+
+    <LinearLayout
+        android:id="@+id/content"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <android.support.design.widget.CoordinatorLayout
-            android:id="@+id/content"
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/title_bar"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
-            <android.support.design.widget.AppBarLayout
-                android:id="@+id/title_bar"
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="?attr/actionBarSize"
+                app:contentInsetStart="0dp"
+                app:popupTheme="@style/AppTheme">
 
-                <android.support.v7.widget.Toolbar
-                    android:id="@+id/toolbar"
-                    android:layout_width="match_parent"
-                    android:layout_height="?attr/actionBarSize"
-                    app:contentInsetStart="0dp"
-                    app:popupTheme="@style/AppTheme">
+                <LinearLayout
+                    android:id="@+id/navigation"
+                    android:layout_width="wrap_content"
+                    android:layout_height
+                        ="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
 
-                    <LinearLayout
-                        android:id="@+id/navigation"
+                    <ImageView
+                        android:id="@+id/avator"
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:gravity="center_vertical">
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_menu"
+                        android:layout_marginStart="10dp"/>
 
-                        <ImageView
-                            android:id="@+id/avator"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/ic_menu"
-                            android:layout_marginStart="10dp"/>
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/toolbar_user"
+                        android:layout_width="35dp"
+                        android:layout_height="31dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_marginStart="15dp"
+                        android:src="@drawable/avator"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:maxLines="1"
+                        android:text="该吃药了"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"/>
+                </LinearLayout>
 
-                        <de.hdodenhof.circleimageview.CircleImageView
-                            android:id="@+id/toolbar_user"
-                            android:layout_width="35dp"
-                            android:layout_height="31dp"
-                            android:layout_marginEnd="3dp"
-                            android:layout_marginStart="15dp"
-                            android:src="@drawable/avator"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="10dp"
-                            android:maxLines="1"
-                            android:text="该吃药了"
-                            android:textColor="@color/white"
-                            android:textSize="15sp"/>
-                    </LinearLayout>
+            </android.support.v7.widget.Toolbar>
 
-                </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
 
-            </android.support.design.widget.AppBarLayout>
+        <com.ycl.tabview.library.TabView
+            android:id="@+id/tabView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:tab_textViewSelColor="#e89565"
+            app:tab_textViewUnSelColor="#c9e7e4"
+            app:tab_tabViewBackgroundColor="#ffffff"
+            app:imageViewTextViewMargin="2dip"
+            app:tab_imageViewHeight="30dip"
+            app:tab_imageViewWidth="30dip"
+            app:tab_tabViewDefaultPosition="1"
+            app:tab_tabViewGravity="bottom"
+            app:tab_tabViewHeight="52dip"
+            app:tab_textViewSize="14sp">
+        </com.ycl.tabview.library.TabView>
 
-            <com.ycl.tabview.library.TabView
-                android:id="@+id/tabView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:tab_textViewSelColor="#e89565"
-                app:tab_textViewUnSelColor="#c9e7e4"
-                app:tab_tabViewBackgroundColor="#ffffff"
-                app:imageViewTextViewMargin="2dip"
-                app:tab_imageViewHeight="30dip"
-                app:tab_imageViewWidth="30dip"
-                app:tab_tabViewDefaultPosition="1"
-                app:tab_tabViewGravity="bottom"
-                app:tab_tabViewHeight="52dip"
-                app:tab_textViewSize="14sp">
-            </com.ycl.tabview.library.TabView>
+    </LinearLayout>
 
-        </android.support.design.widget.CoordinatorLayout>
-
-    </RelativeLayout>
     <!--menu-->
     <com.mxn.soul.flowingdrawer_core.FlowingMenuLayout
         android:id="@+id/menulayout"

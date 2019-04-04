@@ -15,7 +15,7 @@ public class FragmentMain extends Fragment {
 
     public static FragmentMain newInstance(String text){
         FragmentMain fragmentCommon=new FragmentMain();
-        Bundle bundle=new Bundle();
+        Bundle bundle = new Bundle();
         bundle.putString("text",text);
         fragmentCommon.setArguments(bundle);
         return fragmentCommon;

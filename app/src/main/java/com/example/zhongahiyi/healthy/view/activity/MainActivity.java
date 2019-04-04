@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tabViewChildList.add(tabViewChildNews);
         tabViewChildList.add(tabViewChildInfo);
         //end add data
-        tabView.setTabViewDefaultPosition(2);
+        tabView.setTabViewDefaultPosition(0);
         tabView.setTabViewChild(tabViewChildList,getSupportFragmentManager());
         tabView.setOnTabChildClickListener(new TabView.OnTabChildClickListener() {
             @Override
