@@ -9,11 +9,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import com.example.zhongahiyi.healthy.R;
 import com.example.zhongahiyi.healthy.view.activity.DrugDetailActivity;
 import com.example.zhongahiyi.healthy.view.bean.drug.DrugItem;
-
 import java.util.List;
 
 public class RightAdapter extends RecyclerView.Adapter<RightAdapter.ViewHolder>{
