@@ -12,7 +12,7 @@ import com.example.zhongahiyi.healthy.view.bean.info.Info_item;
 
 public class Info_Recyle_Holder extends RecyclerView.ViewHolder{
 
-    private ImageView imageView;
+    public ImageView imageView;
     private TextView textView_name;
     private TextView textView_time;
     private TextView textView_count;

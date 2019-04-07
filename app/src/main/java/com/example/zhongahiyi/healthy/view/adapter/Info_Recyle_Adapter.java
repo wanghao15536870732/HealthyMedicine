@@ -31,8 +31,15 @@ public class Info_Recyle_Adapter extends RecyclerView.Adapter<Info_Recyle_Holder
     }
 
     @Override
-    public void onBindViewHolder(@NonNull Info_Recyle_Holder info_recyle_holder, int i) {
+    public void onBindViewHolder(@NonNull final Info_Recyle_Holder info_recyle_holder, int i) {
+
         info_recyle_holder.bindView(info_items.get(i));
+        info_recyle_holder.imageView.findViewById(R.id.pitch_m).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                info_recyle_holder.imageView.setImageResource(R.drawable.point_on);
+            }
+        });
     }
 
     @Override
