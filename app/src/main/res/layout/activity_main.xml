@@ -131,13 +131,9 @@
                     android:id="@+id/menu_avator"
                     android:layout_width="130dp"
                     android:layout_height="130dp"
-<<<<<<< HEAD
-=======
                     android:layout_marginTop="30dp"
                     android:clickable="true"
->>>>>>> d24b0f196f9b36e51a0fa6c8fe344e7ee326e2c2
                     android:layout_centerHorizontal="true"
-                    android:layout_marginTop="30dp"
                     android:src="@drawable/avator" />
 
                 <TextView
@@ -172,7 +168,8 @@
                         android:layout_height="30dp"
                         android:layout_gravity="center"
                         android:layout_marginLeft="10dp"
-                        app:srcCompat="@drawable/ic_remind" />
+                        app:srcCompat="@drawable/ic_remind"
+                        tools:ignore="VectorDrawableCompat" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -201,7 +198,8 @@
                         android:layout_height="25dp"
                         android:layout_gravity="center"
                         android:layout_marginLeft="10dp"
-                        app:srcCompat="@drawable/ic_scan" />
+                        app:srcCompat="@drawable/ic_scan"
+                        tools:ignore="VectorDrawableCompat" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -230,7 +228,8 @@
                         android:layout_height="30dp"
                         android:layout_gravity="center"
                         android:layout_marginLeft="10dp"
-                        app:srcCompat="@drawable/ic_collect" />
+                        app:srcCompat="@drawable/ic_collect"
+                        tools:ignore="VectorDrawableCompat" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -259,7 +258,8 @@
                         android:layout_height="25dp"
                         android:layout_gravity="center"
                         android:layout_marginLeft="10dp"
-                        app:srcCompat="@drawable/ic_history" />
+                        app:srcCompat="@drawable/ic_history"
+                        tools:ignore="VectorDrawableCompat" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -288,7 +288,8 @@
                         android:layout_height="25dp"
                         android:layout_gravity="center"
                         android:layout_marginLeft="10dp"
-                        app:srcCompat="@drawable/ic_feedback" />
+                        app:srcCompat="@drawable/ic_feedback"
+                        tools:ignore="VectorDrawableCompat" />
 
                     <TextView
                         android:layout_width="wrap_content"

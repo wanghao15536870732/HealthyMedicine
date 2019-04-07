@@ -18,12 +18,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<<<<<<< HEAD
         <activity android:name=".view.activity.DrugDetailActivity"/>
         <activity android:name=".view.ui.GuideActivity"/>
         <activity android:name=".view.activity.MainActivity"/>
-=======
-        <activity android:name=".view.activity.DrugDetailActivity"></activity>
 
         <provider
             android:name="android.support.v4.content.FileProvider"
@@ -34,9 +31,7 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_path"
                 />
-
         </provider>
->>>>>>> d24b0f196f9b36e51a0fa6c8fe344e7ee326e2c2
     </application>
 
 </manifest>
