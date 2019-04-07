@@ -131,6 +131,11 @@
                     android:id="@+id/menu_avator"
                     android:layout_width="130dp"
                     android:layout_height="130dp"
+<<<<<<< HEAD
+=======
+                    android:layout_marginTop="30dp"
+                    android:clickable="true"
+>>>>>>> d24b0f196f9b36e51a0fa6c8fe344e7ee326e2c2
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="30dp"
                     android:src="@drawable/avator" />
