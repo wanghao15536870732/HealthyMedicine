@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.mxn.soul.flowingdrawer_core.FlowingDrawer
+<com.mxn.soul.flowingdrawer_core.FlowingDrawer xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/drawerlayout"
-    android:clipToPadding="false"
-    android:clipChildren="false"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:edPosition="1"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    app:edMenuBackground="#dddddd"
     app:edMenuSize="300dp"
-    app:edMenuBackground="#dddddd">
+    app:edPosition="1">
 
 
     <LinearLayout
@@ -33,17 +33,16 @@
                 <LinearLayout
                     android:id="@+id/navigation"
                     android:layout_width="wrap_content"
-                    android:layout_height
-                        ="match_parent"
-                    android:orientation="horizontal"
-                    android:gravity="center_vertical">
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:id="@+id/avator"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_menu"
-                        android:layout_marginStart="10dp"/>
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/ic_menu" />
 
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/toolbar_user"
@@ -51,7 +50,8 @@
                         android:layout_height="31dp"
                         android:layout_marginEnd="3dp"
                         android:layout_marginStart="15dp"
-                        android:src="@drawable/avator"/>
+                        android:src="@drawable/avator" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -59,7 +59,7 @@
                         android:maxLines="1"
                         android:text="该吃药了"
                         android:textColor="@color/white"
-                        android:textSize="15sp"/>
+                        android:textSize="15sp" />
                 </LinearLayout>
 
             </android.support.v7.widget.Toolbar>
@@ -70,17 +70,16 @@
             android:id="@+id/tabView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:tab_textViewSelColor="#e89565"
-            app:tab_textViewUnSelColor="#c9e7e4"
-            app:tab_tabViewBackgroundColor="#ffffff"
             app:imageViewTextViewMargin="2dip"
             app:tab_imageViewHeight="30dip"
             app:tab_imageViewWidth="30dip"
+            app:tab_tabViewBackgroundColor="#ffffff"
             app:tab_tabViewDefaultPosition="1"
             app:tab_tabViewGravity="bottom"
             app:tab_tabViewHeight="52dip"
-            app:tab_textViewSize="14sp">
-        </com.ycl.tabview.library.TabView>
+            app:tab_textViewSelColor="#e89565"
+            app:tab_textViewSize="14sp"
+            app:tab_textViewUnSelColor="#c9e7e4"></com.ycl.tabview.library.TabView>
 
     </LinearLayout>
 
@@ -100,22 +99,22 @@
                 android:id="@+id/toolbar_menu"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                app:contentInsetStart="0dp"
-                android:background="@color/colorPrimary">
+                android:background="@color/colorPrimary"
+                app:contentInsetStart="0dp">
 
                 <LinearLayout
                     android:id="@+id/navigation_menu"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:gravity="center_vertical">
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:id="@+id/back_menu"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_back"
-                        android:layout_marginStart="13dp"/>
+                        android:layout_marginStart="13dp"
+                        android:src="@drawable/ic_back" />
 
                 </LinearLayout>
 
@@ -132,22 +131,176 @@
                     android:id="@+id/menu_avator"
                     android:layout_width="130dp"
                     android:layout_height="130dp"
-                    android:layout_marginTop="30dp"
                     android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
                     android:src="@drawable/avator" />
+
                 <TextView
                     android:id="@+id/info_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    android:textSize="16sp"
-                    android:text="薛定谔的猫"
                     android:layout_below="@+id/menu_avator"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginTop="8dp"/>
+                    android:layout_marginTop="8dp"
+                    android:text="薛定谔的猫"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
 
             </RelativeLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#ffffff">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        app:srcCompat="@drawable/ic_remind" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:text="用药提醒"
+                        android:textColor="#0b0b0b"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ededeb"
+                    tools:ignore="Suspicious0dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        app:srcCompat="@drawable/ic_scan" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="35dp"
+                        android:text="扫一扫"
+                        android:textColor="#0b0b0b"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ededeb"
+                    tools:ignore="Suspicious0dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        app:srcCompat="@drawable/ic_collect" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:text="我的收藏"
+                        android:textColor="#0b0b0b"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ededeb"
+                    tools:ignore="Suspicious0dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        app:srcCompat="@drawable/ic_history" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="35dp"
+                        android:text="历史用药"
+                        android:textColor="#0b0b0b"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ededeb"
+                    tools:ignore="Suspicious0dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        app:srcCompat="@drawable/ic_feedback" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="35dp"
+                        android:text="用户反馈"
+                        android:textColor="#0b0b0b"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:background="#fff"></LinearLayout>
+            </LinearLayout>
 
         </LinearLayout>
 

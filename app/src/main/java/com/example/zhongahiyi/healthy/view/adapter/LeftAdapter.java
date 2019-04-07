@@ -9,7 +9,7 @@ import com.example.zhongahiyi.healthy.view.bean.drug.DrugBean;
 
 import java.util.List;
 
-public class LeftAdapter extends BaseQuickAdapter<DrugBean> {
+public class  LeftAdapter extends BaseQuickAdapter<DrugBean> {
     private int selectPos = 0;
     public LeftAdapter( List<DrugBean> data) {
         super( R.layout.item_main_left, data);

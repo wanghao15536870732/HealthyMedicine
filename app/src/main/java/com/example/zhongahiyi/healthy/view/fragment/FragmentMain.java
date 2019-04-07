@@ -22,7 +22,7 @@ public class FragmentMain extends Fragment {
     }
     @Nullable @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view=inflater.inflate( R.layout.fragment_info,container,false);
+        View view=inflater.inflate( R.layout.fragment_main,container,false);
         textView= (TextView) view.findViewById(R.id.textView);
         textView.setText(getArguments().getString("text"));
         return view;

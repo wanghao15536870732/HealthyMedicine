@@ -12,14 +12,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.activity.MainActivity">
+        <activity android:name=".view.ui.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.activity.DrugDetailActivity"></activity>
+        <activity android:name=".view.activity.DrugDetailActivity"/>
+        <activity android:name=".view.ui.GuideActivity"/>
+        <activity android:name=".view.activity.MainActivity"/>
     </application>
 
 </manifest>
