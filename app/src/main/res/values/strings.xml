@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Healthy</string>
     <string name="drug_info">补益肝肾，清热明目。用于肝肾两亏，虚火上炎引起：内外翳障，瞳仁散大，视力减退，夜盲昏花，目涩羞明，迎风流泪</string>
+    <string name="take_photo">拍照</string>
+    <string name="upload_from_phone">从手机相册选择</string>
     <string name="news_content">"【药品名称】\n【成份】肉豆蔻(煨)、木香、六神曲(炒)、麦芽(炒)、胡黄连、槟榔、使君子仁。\n【性状】本品为黑棕色至黑褐色的大蜜丸；味微甜、苦。\n【功能主治】健胃消积，驱虫。用于小儿消化不良，虫积腹痛，面黄肌瘦，食少腹胀泄泻。\n【规格】每丸重3g\n【用法用量】口服。一次1～2丸，一日1～2次；三岁以内小儿酌减。\n【不良反应】尚不明确。\n【禁忌】尚不明确。\n【注意事项】服用前应除去蜡皮、塑料球壳；本品可嚼服，也可分份吞服。\n【贮藏】密封。\n【包装】塑料球壳装，每丸重3g。"</string>
 </resources>
