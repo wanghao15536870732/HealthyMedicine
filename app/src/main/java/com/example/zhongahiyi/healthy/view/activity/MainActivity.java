@@ -1,6 +1,6 @@
 package com.example.zhongahiyi.healthy.view.activity;
 
-import android.media.Image;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -22,11 +22,14 @@ import com.ycl.tabview.library.TabViewChild;
 import java.util.ArrayList;
 import java.util.List;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     private TabView tabView;
     private FlowingDrawer mDrawer;
     private ImageView mAvator,ic_back;
+    private CircleImageView mImageView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
@@ -36,12 +39,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         mAvator = (ImageView) findViewById( R.id.avator );
         ic_back = (ImageView) findViewById( R.id.back_menu );
+        mImageView = (CircleImageView) findViewById( R.id.menu_avator );
         setSupportActionBar( toolbar );
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         initTabView();
         initDrawer();
         mAvator.setOnClickListener( this);
         ic_back.setOnClickListener( this );
+        mImageView.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity( new Intent( MainActivity.this,LoginActivity.class ) );
+            }
+        } );
     }
 
     private void initDrawer(){

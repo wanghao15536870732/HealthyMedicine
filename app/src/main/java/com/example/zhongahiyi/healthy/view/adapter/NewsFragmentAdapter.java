@@ -4,13 +4,14 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import com.example.zhongahiyi.healthy.view.bean.news.ClassBean;
+import com.example.zhongahiyi.healthy.view.bean.news.NewBean;
+import com.example.zhongahiyi.healthy.view.bean.news.NewsBean;
 import com.example.zhongahiyi.healthy.view.bean.news.Constant;
 import com.example.zhongahiyi.healthy.view.fragment.NewsListFragment;
 
 public class NewsFragmentAdapter extends FragmentPagerAdapter {
 
-    private ClassBean[] classes = Constant.getNewsClass();
+    private NewBean[] classes = Constant.getNewsClass();
 
     public NewsFragmentAdapter(FragmentManager fm) {
         super( fm );
@@ -23,7 +24,7 @@ public class NewsFragmentAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        ClassBean clazz = classes[position];
+        NewBean clazz = classes[position];
         return NewsListFragment.newInstance( clazz.getId() );
     }
 }

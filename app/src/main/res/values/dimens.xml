@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_litter">2dp</dimen>
+    <dimen name="margin_tiny">4dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_normal">12dp</dimen>
+    <dimen name="margin_medium">20dp</dimen>
+    <dimen name="margin_large">32dp</dimen>
+    <dimen name="margin_huge">64dp</dimen>
+    <dimen name="line_height">1dp</dimen>
+    <dimen name="line_litter_height">0.5dp</dimen>
+    <!-- item 大小 -->
+    <dimen name="item_height_litter">30dp</dimen>
+    <dimen name="item_height_small">40dp</dimen>
+    <dimen name="item_height_normal">50dp</dimen>
+    <dimen name="item_height_medium">65dp</dimen>
+    <dimen name="item_height_large">100dp</dimen>
+    <dimen name="item_height_most">120dp</dimen>
+</resources>

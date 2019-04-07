@@ -8,6 +8,7 @@ public class DrugItem {
     private String url;
 
     private int img;
+
     private String title;
 
     private String content;

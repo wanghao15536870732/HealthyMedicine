@@ -8,4 +8,10 @@
     <color name="primary_dark">#f98949</color>
     <color name="primary_light">#f0b898</color>
 
+    <color name="orange_main">#ec6f1a</color>
+    <color name="orange_light">#ffd39b</color>
+    <color name="orange_deep">#ff6f3a</color>
+    <color name="orange_most">#C76114</color>
+    <color name="orange_litter">#80aa6136</color>
+
 </resources>
