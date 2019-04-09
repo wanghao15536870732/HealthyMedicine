@@ -159,8 +159,8 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="5"
+                    android:layout_height="50dp"
+
                     android:orientation="horizontal">
 
                     <ImageView
@@ -176,6 +176,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginLeft="30dp"
+                        android:textStyle="italic"
                         android:text="用药提醒"
                         android:textColor="#0b0b0b"
                         android:textSize="20sp" />
@@ -189,8 +190,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="5"
+                    android:layout_height="50dp"
                     android:orientation="horizontal">
 
                     <ImageView
@@ -207,6 +207,7 @@
                         android:layout_gravity="center"
                         android:layout_marginLeft="35dp"
                         android:text="扫一扫"
+                        android:textStyle="italic"
                         android:textColor="#0b0b0b"
                         android:textSize="20sp" />
                 </LinearLayout>
@@ -219,8 +220,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="5"
+                    android:layout_height="50dp"
                     android:orientation="horizontal">
 
                     <ImageView
@@ -237,6 +237,7 @@
                         android:layout_gravity="center"
                         android:layout_marginLeft="30dp"
                         android:text="我的收藏"
+                        android:textStyle="italic"
                         android:textColor="#0b0b0b"
                         android:textSize="20sp" />
                 </LinearLayout>
@@ -249,8 +250,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="5"
+                    android:layout_height="50dp"
                     android:orientation="horizontal">
 
                     <ImageView
@@ -267,6 +267,7 @@
                         android:layout_gravity="center"
                         android:layout_marginLeft="35dp"
                         android:text="历史用药"
+                        android:textStyle="italic"
                         android:textColor="#0b0b0b"
                         android:textSize="20sp" />
                 </LinearLayout>
@@ -279,8 +280,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="5"
+                    android:layout_height="50dp"
                     android:orientation="horizontal">
 
                     <ImageView
@@ -297,6 +297,7 @@
                         android:layout_gravity="center"
                         android:layout_marginLeft="35dp"
                         android:text="用户反馈"
+                        android:textStyle="italic"
                         android:textColor="#0b0b0b"
                         android:textSize="20sp" />
                 </LinearLayout>

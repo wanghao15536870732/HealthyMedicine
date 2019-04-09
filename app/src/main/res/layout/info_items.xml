@@ -26,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:layout_marginLeft="330dp"
+        android:layout_marginLeft="300dp"
         android:textSize="17dp"
         android:text="一片"
         android:textColor="#0f0f0f"
@@ -36,7 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:layout_marginLeft="320dp"
+        android:layout_marginLeft="290dp"
         android:text="|"
         android:textSize="20dp"
         android:textColor="#0f0f0f"
@@ -47,10 +47,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:layout_marginLeft="270dp"
+        android:layout_marginLeft="240dp"
         android:textSize="17dp"
         android:text="12:00"
         android:textColor="#0f0f0f"
         android:textStyle="bold"
         />
+    <ImageView
+        android:id="@+id/respair_mes"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="370dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_respair" />
 </RelativeLayout>

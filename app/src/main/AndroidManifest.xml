@@ -21,6 +21,7 @@
         <activity android:name=".view.activity.DrugDetailActivity"/>
         <activity android:name=".view.ui.GuideActivity"/>
         <activity android:name=".view.activity.MainActivity"/>
+        <activity android:name=".view.activity.SettintActivity"/>
 
         <provider
             android:name="android.support.v4.content.FileProvider"

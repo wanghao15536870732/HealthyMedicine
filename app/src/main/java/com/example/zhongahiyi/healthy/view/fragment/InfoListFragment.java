@@ -1,6 +1,7 @@
 package com.example.zhongahiyi.healthy.view.fragment;
 
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
@@ -8,6 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.example.zhongahiyi.healthy.R;
 import com.example.zhongahiyi.healthy.view.adapter.Info_Recyle_Adapter;
@@ -17,12 +19,16 @@ import com.example.zhongahiyi.healthy.view.bean.news.Constant;
 import java.util.ArrayList;
 import java.util.List;
 
+import terranovaproductions.newcomicreader.FloatingActionMenu;
+
 public class InfoListFragment extends Fragment implements SwipeRefreshLayout.OnRefreshListener {
     private RecyclerView mRecyclerView;
     private SwipeRefreshLayout mSwipeRefreshLayout;
 
     private Info_Recyle_Adapter info_recyle_adapter;
     private List<Info_item> info_items;
+
+    private TextView textView;
 
     public static InfoListFragment newInstance(int dateId) {
         InfoListFragment infoListFragment = new InfoListFragment();
@@ -34,6 +40,8 @@ public class InfoListFragment extends Fragment implements SwipeRefreshLayout.OnR
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_info_list, null, false);
+
+
         mRecyclerView = (RecyclerView) view.findViewById(R.id.rv_infoList);
         mSwipeRefreshLayout = (SwipeRefreshLayout) view.findViewById(R.id.info_RefreshLayout);
         mSwipeRefreshLayout.setColorSchemeResources(R.color.primary,
@@ -46,6 +54,7 @@ public class InfoListFragment extends Fragment implements SwipeRefreshLayout.OnR
     }
 
     public void initData() {
+        //FloatingActionMenu menu = (FloatingActionMenu)view.findViewById()
         info_items = new ArrayList<>();
         for (int i = 0; i < 5; i++) {
             info_items.add(new Info_item(R.drawable.ic_pitch_off, "阿莫西林", "12.00", "1片"));
