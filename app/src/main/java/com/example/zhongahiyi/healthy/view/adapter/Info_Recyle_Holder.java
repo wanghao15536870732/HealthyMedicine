@@ -10,12 +10,13 @@ import com.example.zhongahiyi.healthy.R;
 import com.example.zhongahiyi.healthy.view.bean.info.Info_item;
 
 
-public class Info_Recyle_Holder extends RecyclerView.ViewHolder{
+public class Info_Recyle_Holder extends RecyclerView.ViewHolder {
 
     public ImageView imageView;
-    private TextView textView_name;
-    private TextView textView_time;
-    private TextView textView_count;
+    public TextView textView_name;
+    public TextView textView_time;
+    public TextView textView_count;
+    public ImageView repair_mess;
 
     public Info_Recyle_Holder(@NonNull View itemView) {
         super(itemView);
@@ -23,9 +24,10 @@ public class Info_Recyle_Holder extends RecyclerView.ViewHolder{
         textView_name = itemView.findViewById(R.id.medcine_name);
         textView_time = itemView.findViewById(R.id.eat_time);
         textView_count = itemView.findViewById(R.id.eat_count);
+        repair_mess = itemView.findViewById(R.id.respair_mes);
     }
 
-    public void bindView(Info_item info_item){
+    public void bindView(Info_item info_item) {
         imageView.setImageResource(info_item.getImage());
         textView_name.setText(info_item.getName());
         textView_time.setText(info_item.getTime());
