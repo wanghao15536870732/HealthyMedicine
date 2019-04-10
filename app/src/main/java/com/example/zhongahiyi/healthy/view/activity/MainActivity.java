@@ -2,6 +2,8 @@ package com.example.zhongahiyi.healthy.view.activity;
 
 import android.Manifest;
 import android.annotation.TargetApi;
+import android.app.Activity;
+import android.content.ContentResolver;
 import android.content.ContentUris;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -19,11 +21,16 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.content.FileProvider;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
+import android.webkit.WebView;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -34,6 +41,9 @@ import com.example.zhongahiyi.healthy.view.fragment.FragmentMain;
 import com.example.zhongahiyi.healthy.view.fragment.FragmentNews;
 import com.mxn.soul.flowingdrawer_core.ElasticDrawer;
 import com.mxn.soul.flowingdrawer_core.FlowingDrawer;
+import com.uuzuche.lib_zxing.activity.CaptureActivity;
+import com.uuzuche.lib_zxing.activity.CodeUtils;
+import com.uuzuche.lib_zxing.activity.ZXingLibrary;
 import com.ycl.tabview.library.TabView;
 import com.ycl.tabview.library.TabViewChild;
 
@@ -52,12 +62,18 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     public static final int TAKE_PHOTO = 1;
     public static final int CHOOSE_PHOTO = 2;
+    private static final int REQUEST_CODE = 3;
+    public static final int REQUEST_IMAGE = 5;
     private TabView tabView;
     private FlowingDrawer mDrawer;
     private ImageView mAvator, ic_back;
+    private TextView info_name;
+    private LinearLayout drugAlart, drugscan, collect, drugHistory, feedBack;
     private CircleImageView menuAvator;
     private CircleImageView userAvator;
     private Uri imagUri;
+    private LinearLayout medialart;
+
     private int[] items = new int[]{
             R.string.take_photo,
             R.string.upload_from_phone
@@ -74,22 +90,40 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tabView = (TabView) findViewById(R.id.tabView);
         mDrawer = (FlowingDrawer) findViewById(R.id.drawerlayout);
         menuAvator = (CircleImageView) findViewById(R.id.menu_avator);
+        drugAlart = findViewById(R.id.durg_alart);
+        drugHistory = findViewById(R.id.drug_history);
+        drugscan = findViewById(R.id.drug_scan);
+        collect = findViewById(R.id.drug_collect);
+        feedBack = findViewById(R.id.feedback);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         userAvator = findViewById(R.id.toolbar_user);
+        info_name = findViewById(R.id.info_name);
         mAvator = (ImageView) findViewById(R.id.avator);
         ic_back = (ImageView) findViewById(R.id.back_menu);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
+        ZXingLibrary.initDisplayOpinion(this);
         initTabView();
         initDrawer();
         menuAvator.setOnClickListener(this);
         mAvator.setOnClickListener(this);
         ic_back.setOnClickListener(this);
+        info_name.setOnClickListener(this);
+        drugHistory.setOnClickListener(this);
+        drugAlart.setOnClickListener(this);
+        drugscan.setOnClickListener(this);
+        collect.setOnClickListener(this);
+        feedBack.setOnClickListener(this);
         File file = new File(getExternalCacheDir(), "ChatHead.JPEG");
         if (file.exists()) {
             Bitmap bitmap = BitmapFactory.decodeFile(file.getAbsolutePath());
             menuAvator.setImageBitmap(bitmap);
             userAvator.setImageBitmap(bitmap);
+        }
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (checkSelfPermission(Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
+                requestPermissions(new String[]{Manifest.permission.CAMERA}, 4);
+            }
         }
     }
 
@@ -102,6 +136,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     menuAvator.setImageBitmap(bitmap);
                     userAvator.setImageBitmap(bitmap);
                     saveBitmapFile(bitmap);
+                    Toast.makeText(MainActivity.this, "你已成功修改头像", Toast.LENGTH_SHORT).show();
                 } catch (FileNotFoundException e) {
                     e.printStackTrace();
                 }
@@ -115,10 +150,51 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     handleImageBeforeKitKat(data);
             }
         }
+        if (requestCode == REQUEST_CODE) {
+            if (resultCode == -1) {
+                if (null != data) {
+                    Bundle bundle = data.getExtras();
+                    if (bundle == null) {
+                        return;
+                    }
+                    if (bundle.getInt(CodeUtils.RESULT_TYPE) == CodeUtils.RESULT_SUCCESS) {
+                        String result = bundle.getString(CodeUtils.RESULT_STRING);
+                        Toast.makeText(MainActivity.this, "解析结果:" + result, Toast.LENGTH_LONG).show();
+                    } else if (bundle.getInt(CodeUtils.RESULT_TYPE) == CodeUtils.RESULT_FAILED) {
+                        Toast.makeText(MainActivity.this, "解析二维码失败", Toast.LENGTH_LONG).show();
+                    }
+                }
+            }
+        }
+        if (requestCode == REQUEST_IMAGE) {
+            if (data != null) {
+                Uri uri = data.getData();
+                ContentResolver cr = getContentResolver();
+                try {
+                    Bitmap mBitmap = MediaStore.Images.Media.getBitmap(cr, uri);//显得到bitmap图片
+                    CodeUtils.analyzeBitmap(mBitmap.toString(), new CodeUtils.AnalyzeCallback() {
+                        @Override
+                        public void onAnalyzeSuccess(Bitmap mBitmap, String result) {
+                            Toast.makeText(MainActivity.this, "解析结果:" + result, Toast.LENGTH_LONG).show();
+                        }
+
+                        @Override
+                        public void onAnalyzeFailed() {
+                            Toast.makeText(MainActivity.this, "解析二维码失败", Toast.LENGTH_LONG).show();
+                        }
+                    });
+
+                    if (mBitmap != null) {
+                        mBitmap.recycle();
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        }
     }
 
     @TargetApi(19)
-
     private void handleImageOnKitKat(Intent data) {
         String imagePath = null;
         Uri uri = data.getData();
@@ -140,6 +216,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         displayImage(imagePath);
     }
+
 
     private void handleImageBeforeKitKat(Intent data) {
         Uri uri = data.getData();
@@ -165,6 +242,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             menuAvator.setImageBitmap(bitmap);
             userAvator.setImageBitmap(bitmap);
             saveBitmapFile(bitmap);
+            Toast.makeText(MainActivity.this, "你已成功修改头象", Toast.LENGTH_SHORT).show();
         } else {
             Toast.makeText(MainActivity.this, "获取图片失败", Toast.LENGTH_SHORT).show();
         }
@@ -198,7 +276,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 } else if (which == 1) {
                     if (ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission
                             .WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
-
                         ActivityCompat.requestPermissions(MainActivity.this,
                                 new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
                     } else {
@@ -291,6 +368,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
+    public void alert_edit() {
+        final EditText et = new EditText(this);
+        new AlertDialog.Builder(this).setTitle("更改名字:")
+                .setView(et)
+                .setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        info_name.setText(et.getText().toString().replaceAll("\\s*", ""));
+                        Toast.makeText(getApplicationContext(), "名称修改成功！", Toast.LENGTH_LONG).show();
+                    }
+                }).setNegativeButton("取消", null).show();
+    }
+
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
@@ -302,6 +392,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.menu_avator:
                 bottomSheet_show();
+                break;
+            case R.id.info_name:
+                alert_edit();
+                break;
+            case R.id.drug_history:
+
+                break;
+            case R.id.durg_alart:
+
+                break;
+            case R.id.drug_scan:
+                Intent intent = new Intent(MainActivity.this, CaptureActivity.class);
+                startActivityForResult(intent, REQUEST_CODE);
+                break;
+            case R.id.drug_collect:
+
+                break;
+            case R.id.feedback:
+
+                break;
             default:
                 break;
         }
