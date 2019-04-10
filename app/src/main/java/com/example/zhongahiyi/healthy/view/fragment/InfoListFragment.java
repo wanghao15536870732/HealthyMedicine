@@ -19,7 +19,7 @@ import com.example.zhongahiyi.healthy.view.bean.news.Constant;
 import java.util.ArrayList;
 import java.util.List;
 
-import terranovaproductions.newcomicreader.FloatingActionMenu;
+
 
 public class InfoListFragment extends Fragment implements SwipeRefreshLayout.OnRefreshListener {
     private RecyclerView mRecyclerView;

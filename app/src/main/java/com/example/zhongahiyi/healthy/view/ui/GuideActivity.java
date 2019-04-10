@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import com.example.zhongahiyi.healthy.R;
+import com.example.zhongahiyi.healthy.view.activity.LoginActivity;
 import com.example.zhongahiyi.healthy.view.activity.MainActivity;
 
 import java.util.ArrayList;
@@ -101,7 +102,7 @@ public class GuideActivity extends AppCompatActivity implements View.OnClickList
         switch (v.getId()) {
             case R.id.btn_start:
             case R.id.iv_jump:
-                startActivity(new Intent(this, MainActivity.class));
+                startActivity(new Intent(this, LoginActivity.class));
                 finish();
                 break;
         }
