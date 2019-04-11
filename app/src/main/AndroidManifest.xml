@@ -20,7 +20,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".view.activity.DrugDetailActivity" />
-        <activity android:name=".view.activity.LoginActivity"></activity>
     </application>
 
 </manifest>
