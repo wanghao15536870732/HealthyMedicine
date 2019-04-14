@@ -9,7 +9,6 @@
         android:id="@+id/drug_src"
         android:layout_width="130dp"
         android:layout_height="90dp"
-        android:src="@drawable/drug1"
         android:scaleType="centerInside"/>
     
     

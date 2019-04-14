@@ -226,4 +226,5 @@
     <dimen name="dp_800">800dp</dimen>
     <dimen name="drawer_width">240dp</dimen>
     <dimen name="iv_width">20dp</dimen>
+    <dimen name="toolbar_height">56dp</dimen>
 </resources>

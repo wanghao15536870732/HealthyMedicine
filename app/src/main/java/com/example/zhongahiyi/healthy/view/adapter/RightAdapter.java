@@ -1,5 +1,6 @@
 package com.example.zhongahiyi.healthy.view.adapter;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -9,6 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
 import com.example.zhongahiyi.healthy.R;
 import com.example.zhongahiyi.healthy.view.activity.DrugDetailActivity;
 import com.example.zhongahiyi.healthy.view.bean.drug.DrugItem;
@@ -21,31 +24,33 @@ public class RightAdapter extends RecyclerView.Adapter<RightAdapter.ViewHolder>{
     public RightAdapter(List<DrugItem> items){
         mDrugItems = items;
     }
+    private Context context;
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull final ViewGroup viewGroup, int i) {
         final View view = LayoutInflater.from( viewGroup.getContext())
                 .inflate( R.layout.drug_item,viewGroup,false);
+        context = viewGroup.getContext();
         final ViewHolder holder = new ViewHolder( view );
-        holder.itemView.setOnClickListener( new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(viewGroup.getContext(), DrugDetailActivity.class);
-                Bundle bundle = new Bundle(  );
-                bundle.putString( DrugDetailActivity.EXTRA_NAME, holder.title.toString());
-                viewGroup.getContext().startActivity( intent );
-            }
-        } );
         return holder;
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder viewHolder, int i) {
-        DrugItem drugItem = mDrugItems.get( i );
-        viewHolder.mImageView.setImageResource( drugItem.getImg());
+    public void onBindViewHolder(@NonNull final ViewHolder viewHolder, int i) {
+        final DrugItem drugItem = mDrugItems.get( i );
+        Glide.with(context).load(drugItem.getUrl()).into(viewHolder.mImageView);
         viewHolder.title.setText( drugItem.getTitle() );
         viewHolder.content.setText( drugItem.getContent() );
+        viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, DrugDetailActivity.class);
+                intent.putExtra(DrugDetailActivity.EXTRA_NAME,drugItem.getTitle());
+                intent.putExtra(DrugDetailActivity.EXTRA_IMG,drugItem.getUrl());
+                context.startActivity( intent );
+            }
+        });
     }
 
     @Override

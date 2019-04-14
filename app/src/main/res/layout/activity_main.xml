@@ -57,7 +57,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
                         android:maxLines="1"
-                        android:text="该吃药了"
+                        android:text="今天吃药了吗"
                         android:textColor="@color/white"
                         android:textSize="15sp" />
                 </LinearLayout>
@@ -79,7 +79,7 @@
             app:tab_tabViewHeight="52dip"
             app:tab_textViewSelColor="#e89565"
             app:tab_textViewSize="14sp"
-            app:tab_textViewUnSelColor="#c9e7e4"></com.ycl.tabview.library.TabView>
+            app:tab_textViewUnSelColor="#c9e7e4"/>
 
     </LinearLayout>
 
@@ -168,7 +168,7 @@
                         android:layout_height="30dp"
                         android:layout_gravity="center"
                         android:layout_marginLeft="10dp"
-                        app:srcCompat="@drawable/ic_remind"
+                        app:srcCompat="@drawable/ic_remind_left"
                         tools:ignore="VectorDrawableCompat" />
 
                     <TextView
@@ -228,7 +228,7 @@
                         android:layout_height="30dp"
                         android:layout_gravity="center"
                         android:layout_marginLeft="10dp"
-                        app:srcCompat="@drawable/ic_collect"
+                        app:srcCompat="@drawable/ic_collect_left"
                         tools:ignore="VectorDrawableCompat" />
 
                     <TextView
@@ -258,7 +258,7 @@
                         android:layout_height="25dp"
                         android:layout_gravity="center"
                         android:layout_marginLeft="10dp"
-                        app:srcCompat="@drawable/ic_history"
+                        app:srcCompat="@drawable/ic_history_left"
                         tools:ignore="VectorDrawableCompat" />
 
                     <TextView
@@ -288,7 +288,7 @@
                         android:layout_height="25dp"
                         android:layout_gravity="center"
                         android:layout_marginLeft="10dp"
-                        app:srcCompat="@drawable/ic_feedback"
+                        app:srcCompat="@drawable/ic_feedback_left"
                         tools:ignore="VectorDrawableCompat" />
 
                     <TextView

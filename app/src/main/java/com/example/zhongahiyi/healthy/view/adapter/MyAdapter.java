@@ -2,6 +2,8 @@ package com.example.zhongahiyi.healthy.view.adapter;
 
 
 import android.content.Context;
+import android.support.v4.content.ContextCompat;
+import android.support.v7.widget.CardView;
 import android.util.SparseArray;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,7 +12,10 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.zhongahiyi.healthy.R;
+
 import java.util.ArrayList;
+
 public abstract class MyAdapter<T> extends BaseAdapter {
     private ArrayList<T> mData;
     private int mLayoutRes;           //布局id
@@ -168,6 +173,20 @@ public abstract class MyAdapter<T> extends BaseAdapter {
             return this;
         }
 
+        /**
+         * 设置背景颜色
+         */
+        public ViewHolder setbackgroudcolor(int id, int color) {
+            View view = getView(id);
+            if (view instanceof CardView) {
+                int setcolor = ContextCompat.getColor(context,color);
+                ((CardView) view).setCardBackgroundColor(setcolor);
+            }
+// else {
+//                view.setBackgroundResource(drawableRes);
+//            }
+            return this;
+        }
 
         /**
          * 设置点击监听

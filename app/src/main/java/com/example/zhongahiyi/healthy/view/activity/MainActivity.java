@@ -91,6 +91,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             menuAvator.setImageBitmap(bitmap);
             userAvator.setImageBitmap(bitmap);
         }
+        requestPermissions();
     }
 
     @Override
@@ -304,6 +305,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 bottomSheet_show();
             default:
                 break;
+        }
+    }
+
+    //权限申请
+    private void requestPermissions() {
+        try {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                int permission = ActivityCompat.checkSelfPermission( this,
+                        Manifest.permission.RECORD_AUDIO );
+                if (permission != PackageManager.PERMISSION_GRANTED) {
+                    ActivityCompat.requestPermissions( this, new String[]{
+                            Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.ACCESS_FINE_LOCATION,
+                            Manifest.permission.WRITE_SETTINGS, Manifest.permission.READ_EXTERNAL_STORAGE,
+                            Manifest.permission.RECORD_AUDIO, Manifest.permission.READ_PHONE_STATE,
+                            Manifest.permission.WRITE_SETTINGS}, 0x0010 );
+
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 }

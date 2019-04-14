@@ -55,4 +55,13 @@
     <!-- 浅灰色 -->
     <color name="gray_light">#E7E7E7</color>
 
+    <!--cardview背景-->
+    <color name="one">#2dc731</color>
+    <color name="two">#f2c707</color>
+    <color name="three">#c271f5</color>
+    <color name="four">#888686</color>
+    <color name="five">#0b9ff5</color>
+    <color name="six">#5e51d5</color>
+    <color name="black">#000000</color>
+
 </resources>

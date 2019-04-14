@@ -82,12 +82,12 @@ public class FragmentDrug extends Fragment {
         listBeanList = new ArrayList<>();
 
         //药的种类
-        DrugItem drug1 = new DrugItem(R.drawable.drug1,"琥珀还睛丸","补益肝肾，清热明目。用于肝肾两亏，虚火上炎。");
-        DrugItem drug2 = new DrugItem(R.drawable.drug2,"荷叶丸","凉血止血。用于血热所致的咯血、衄血、尿血、便血、崩漏。");
-        DrugItem drug3 = new DrugItem(R.drawable.drug3,"河车大造丸","滋阴清热，补肾益肺。用于肺肾两亏，虚劳咳嗽，骨蒸潮热，盗汗遗精，腰膝酸软。");
-        DrugItem drug4 = new DrugItem(R.drawable.drug4,"硝苯地平控释片","1．高血压 2．冠心病 慢性稳定型心绞痛(劳累性心绞痛)");
-        DrugItem drug5 = new DrugItem(R.drawable.drug5,"阿卡波糖片","配合饮食控制治疗糖尿病。");
-        DrugItem drug6 = new DrugItem(R.drawable.drug6,"尼莫地平片","可预防和治疗由于动脉瘤性蛛网膜下腔出血后脑血管痉挛引起的缺血性神经损伤。");
+        DrugItem drug1 = new DrugItem("http://ppwkqlsve.bkt.clouddn.com/drug1.jpg","琥珀还睛丸","补益肝肾，清热明目。用于肝肾两亏，虚火上炎。");
+        DrugItem drug2 = new DrugItem("http://ppwkqlsve.bkt.clouddn.com/drug2.jpg","荷叶丸","凉血止血。用于血热所致的咯血、衄血、尿血、便血、崩漏。");
+        DrugItem drug3 = new DrugItem("http://ppwkqlsve.bkt.clouddn.com/drug3.jpg","河车大造丸","滋阴清热，补肾益肺。用于肺肾两亏，虚劳咳嗽，骨蒸潮热，盗汗遗精，腰膝酸软。");
+        DrugItem drug4 = new DrugItem("http://ppwkqlsve.bkt.clouddn.com/drug4.jpg","硝苯地平控释片","1．高血压 2．冠心病 慢性稳定型心绞痛(劳累性心绞痛)");
+        DrugItem drug5 = new DrugItem("http://ppwkqlsve.bkt.clouddn.com/drug5.jpg","阿卡波糖片","配合饮食控制治疗糖尿病。");
+        DrugItem drug6 = new DrugItem("http://ppwkqlsve.bkt.clouddn.com/drug6.jpg","尼莫地平片","可预防和治疗由于动脉瘤性蛛网膜下腔出血后脑血管痉挛引起的缺血性神经损伤。");
         //病的种类
         List<DrugItem> drugItems1 = new ArrayList<>(  );
         drugItems1.add( drug1 );

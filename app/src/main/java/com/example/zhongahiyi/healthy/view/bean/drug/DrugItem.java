@@ -12,8 +12,8 @@ public class DrugItem {
 
     private String content;
 
-    public DrugItem( int img, String title, String content) {
-        this.img = img;
+    public DrugItem(String url, String title, String content) {
+        this.url = url;
         this.title = title;
         this.content = content;
     }
