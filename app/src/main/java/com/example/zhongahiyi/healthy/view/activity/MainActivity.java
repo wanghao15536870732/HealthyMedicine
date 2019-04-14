@@ -120,15 +120,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             menuAvator.setImageBitmap(bitmap);
             userAvator.setImageBitmap(bitmap);
         }
-<<<<<<< HEAD
         requestPermissions();
-=======
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             if (checkSelfPermission(Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
                 requestPermissions(new String[]{Manifest.permission.CAMERA}, 4);
             }
         }
->>>>>>> af3a35660f6ca039901ac762355f5c926914293a
+
     }
 
     @Override
@@ -425,14 +423,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void requestPermissions() {
         try {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                int permission = ActivityCompat.checkSelfPermission( this,
-                        Manifest.permission.RECORD_AUDIO );
+                int permission = ActivityCompat.checkSelfPermission(this,
+                        Manifest.permission.RECORD_AUDIO);
                 if (permission != PackageManager.PERMISSION_GRANTED) {
-                    ActivityCompat.requestPermissions( this, new String[]{
+                    ActivityCompat.requestPermissions(this, new String[]{
                             Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.ACCESS_FINE_LOCATION,
                             Manifest.permission.WRITE_SETTINGS, Manifest.permission.READ_EXTERNAL_STORAGE,
                             Manifest.permission.RECORD_AUDIO, Manifest.permission.READ_PHONE_STATE,
-                            Manifest.permission.WRITE_SETTINGS}, 0x0010 );
+                            Manifest.permission.WRITE_SETTINGS}, 0x0010);
 
                 }
             }
