@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.novaapps:FloatingActionMenu:1.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/FloatingActionMenu-1.0.aar/3171e6b519661d6551056e434edd59a6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/FloatingActionMenu-1.0.aar/3171e6b519661d6551056e434edd59a6/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.novaapps/FloatingActionMenu/1.0/5baeeec5011db4d6490887aed26f7917dad89113/FloatingActionMenu-1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
