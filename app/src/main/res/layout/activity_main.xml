@@ -48,8 +48,8 @@
                         android:id="@+id/toolbar_user"
                         android:layout_width="35dp"
                         android:layout_height="31dp"
-                        android:layout_marginEnd="3dp"
                         android:layout_marginStart="15dp"
+                        android:layout_marginEnd="3dp"
                         android:src="@drawable/avator" />
 
                     <TextView
@@ -131,9 +131,9 @@
                     android:id="@+id/menu_avator"
                     android:layout_width="130dp"
                     android:layout_height="130dp"
+                    android:layout_centerHorizontal="true"
                     android:layout_marginTop="30dp"
                     android:clickable="true"
-                    android:layout_centerHorizontal="true"
                     android:src="@drawable/avator" />
 
                 <TextView
@@ -152,16 +152,17 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:background="#ffffff">
-
+                android:background="#ffffff"
+                android:orientation="vertical">
 
 
                 <LinearLayout
+                    android:id="@+id/durg_alart"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
 
                     android:orientation="horizontal">
+
 
                     <ImageView
                         android:layout_width="30dp"
@@ -189,6 +190,7 @@
                     tools:ignore="Suspicious0dp" />
 
                 <LinearLayout
+                    android:id="@+id/drug_scan"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:orientation="horizontal">
@@ -202,6 +204,7 @@
                         tools:ignore="VectorDrawableCompat" />
 
                     <TextView
+                        android:id="@+id/scan"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -219,6 +222,7 @@
                     tools:ignore="Suspicious0dp" />
 
                 <LinearLayout
+                    android:id="@+id/drug_collect"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:orientation="horizontal">
@@ -249,6 +253,7 @@
                     tools:ignore="Suspicious0dp" />
 
                 <LinearLayout
+                    android:id="@+id/drug_history"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:orientation="horizontal">
@@ -279,6 +284,7 @@
                     tools:ignore="Suspicious0dp" />
 
                 <LinearLayout
+                    android:id="@+id/feedback"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:orientation="horizontal">
