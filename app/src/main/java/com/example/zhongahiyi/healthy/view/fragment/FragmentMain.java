@@ -46,7 +46,7 @@ public class FragmentMain extends Fragment {
         mData.add(new Icon(R.color.two,R.drawable.ic_search, "搜索设置"));
         mData.add(new Icon(R.color.one,R.drawable.ic_feedback, "手动设置"));
         mData.add(new Icon(R.color.five,R.drawable.ic_collect, "我的收藏"));
-        mData.add(new Icon(R.color.three,R.drawable.ic_history, "用药历史"));
+        mData.add(new Icon(R.color.three,R.drawable.ic_history, "生病历史"));
         mData.add(new Icon(R.color.six,R.drawable.ic_remind, "服药提醒"));
         mData.add(new Icon(R.color.four,R.drawable.ic_scan_code, "条码扫描"));
         mAdapter = new MyAdapter<Icon>(mData, R.layout.main_item_grid) {
