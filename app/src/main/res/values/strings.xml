@@ -35,4 +35,5 @@
     <string name="reset_pwd_submit">确认</string>
     <string name="message_pwd_error">密码错误</string>
     <string name="message_username_null">用户名未填写！！！</string>
+    <string name="title_activity_data_select">DataSelectActivity</string>
 </resources>

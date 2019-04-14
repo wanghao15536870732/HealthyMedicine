@@ -41,4 +41,7 @@ dependencies {
     implementation 'com.novaapps:FloatingActionMenu:1.0'
     implementation 'org.michaelbel:bottomsheet:1.2.3'
     implementation 'cn.yipianfengye.android:zxing-library:2.2'
+    implementation 'com.github.markushi:circlebutton:1.1'
+    implementation 'com.github.nukc.amountview:library:1.0'
+    implementation 'org.jetbrains:annotations-java5:15.0'
 }
