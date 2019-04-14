@@ -22,8 +22,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private ImageView mIVLoginPwDel;
 
 
-    Button login;
-    Button register;
+    private Button login;
+    private Button register;
 
 
     @Override

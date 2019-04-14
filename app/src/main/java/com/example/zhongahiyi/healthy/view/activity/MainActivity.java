@@ -161,7 +161,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     }
                     if (bundle.getInt(CodeUtils.RESULT_TYPE) == CodeUtils.RESULT_SUCCESS) {
                         String result = bundle.getString(CodeUtils.RESULT_STRING);
-                        Toast.makeText(MainActivity.this, "解析结果:" + result, Toast.LENGTH_LONG).show();
+                        Intent intent=new Intent(MainActivity.this,DataSelectActivity.class);
+                        intent.putExtra("data",result);
+                        startActivity(intent);
+//                        Toast.makeText(MainActivity.this, "阿莫西林胶囊已添加到您的药单", Toast.LENGTH_LONG).show();
                     } else if (bundle.getInt(CodeUtils.RESULT_TYPE) == CodeUtils.RESULT_FAILED) {
                         Toast.makeText(MainActivity.this, "解析二维码失败", Toast.LENGTH_LONG).show();
                     }
@@ -177,7 +180,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     CodeUtils.analyzeBitmap(mBitmap.toString(), new CodeUtils.AnalyzeCallback() {
                         @Override
                         public void onAnalyzeSuccess(Bitmap mBitmap, String result) {
-                            Toast.makeText(MainActivity.this, "解析结果:" + result, Toast.LENGTH_LONG).show();
+//                            Toast.makeText(MainActivity.this, "解析结果:" + result, Toast.LENGTH_LONG).show();
                         }
 
                         @Override
@@ -409,7 +412,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivityForResult(intent, REQUEST_CODE);
                 break;
             case R.id.drug_collect:
-
                 break;
             case R.id.feedback:
 
