@@ -1,5 +1,6 @@
 package com.example.zhongahiyi.healthy.view.activity;
 
+import android.app.admin.DeviceAdminService;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.AssetManager;
@@ -136,9 +137,14 @@ public class DataSelectActivity extends AppCompatActivity implements View.OnClic
                 break;
             case R.id.button_right:
                 DBManager dbManager = new DBManager(DataSelectActivity.this);
-                SQLiteDatabase db1 = dbManager.getDatabase(DataSelectActivity.this);
-                Cursor cursor = db1.query("med", null, null, null, null, null, null);
-                cursor.close();
+                SQLiteDatabase db1 = dbManager.getDatabase();
+                Cursor cursor = db1.query("durgclass", null, null, null, null, null, null);
+                if (cursor.moveToFirst()) {
+                    do {
+                        String res = cursor.getString(cursor.getColumnIndex("count"));
+                        Log.e("TAG", res);
+                    } while (cursor.moveToNext());
+                }
                 Toast.makeText(this, "数据库查询成功！", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.button_wrong:

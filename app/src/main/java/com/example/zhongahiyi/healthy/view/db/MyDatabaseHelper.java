@@ -17,7 +17,7 @@
 //
 //    @Override
 //    public void onCreate(SQLiteDatabase db) {
-////        db.execSQL(CREAK_REMIND);
+//        db.execSQL(CREAK_REMIND);
 //
 //    }
 //

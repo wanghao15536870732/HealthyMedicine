@@ -5,6 +5,7 @@ import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.ContentResolver;
 import android.content.ContentUris;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -35,6 +36,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.zhongahiyi.healthy.R;
+import com.example.zhongahiyi.healthy.view.bean.drug.DrugItem;
+import com.example.zhongahiyi.healthy.view.db.DBManager;
 import com.example.zhongahiyi.healthy.view.fragment.FragmentDrug;
 import com.example.zhongahiyi.healthy.view.fragment.FragmentInfo;
 import com.example.zhongahiyi.healthy.view.fragment.FragmentMain;
@@ -73,6 +76,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private CircleImageView userAvator;
     private Uri imagUri;
     private LinearLayout medialart;
+    private static Context context;
 
     private int[] items = new int[]{
             R.string.take_photo,
@@ -82,6 +86,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             R.drawable.ic_take_photo,
             R.drawable.ic_albm
     };
+
+    public static Context getContext() {
+        return context;
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -114,6 +123,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         drugscan.setOnClickListener(this);
         collect.setOnClickListener(this);
         feedBack.setOnClickListener(this);
+//        DBManager dbManager=new DBManager(getContext());
+//        dbManager.getDatabase();
         File file = new File(getExternalCacheDir(), "ChatHead.JPEG");
         if (file.exists()) {
             Bitmap bitmap = BitmapFactory.decodeFile(file.getAbsolutePath());
@@ -161,8 +172,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     }
                     if (bundle.getInt(CodeUtils.RESULT_TYPE) == CodeUtils.RESULT_SUCCESS) {
                         String result = bundle.getString(CodeUtils.RESULT_STRING);
-                        Intent intent=new Intent(MainActivity.this,DataSelectActivity.class);
-                        intent.putExtra("data",result);
+                        Intent intent = new Intent(MainActivity.this, DataSelectActivity.class);
+                        intent.putExtra("data", result);
                         startActivity(intent);
 //                        Toast.makeText(MainActivity.this, "阿莫西林胶囊已添加到您的药单", Toast.LENGTH_LONG).show();
                     } else if (bundle.getInt(CodeUtils.RESULT_TYPE) == CodeUtils.RESULT_FAILED) {
@@ -432,6 +443,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.ACCESS_FINE_LOCATION,
                             Manifest.permission.WRITE_SETTINGS, Manifest.permission.READ_EXTERNAL_STORAGE,
                             Manifest.permission.RECORD_AUDIO, Manifest.permission.READ_PHONE_STATE,
+                            Manifest.permission.CAMERA,
                             Manifest.permission.WRITE_SETTINGS}, 0x0010);
 
                 }
