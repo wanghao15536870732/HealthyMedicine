@@ -27,6 +27,11 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
 
+        <activity
+            android:name=".activity.DataSelectActivity"
+            android:label="选择药物"
+            android:theme="@style/AppTheme.NoActionBar" />
+
         <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -34,19 +39,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.WebUIActivity"/>
+        <activity android:name=".activity.RemindActivity"/>
         <activity android:name=".activity.DrugDetailActivity" />
         <activity android:name=".ui.GuideActivity" />
         <activity android:name=".ui.SplashActivity" />
         <activity android:name=".activity.SettintActivity" />
         <activity android:name=".activity.LoginActivity" />
         <activity android:name=".activity.RegisterActivity" />
-        <activity android:name=".activity.WebUIActivity" />
-        <activity android:name=".activity.RemindActivity" />
+
         <activity android:name=".activity.SearchActivity" />
-        <activity
-            android:name=".activity.DataSelectActivity"
-            android:label="选择药物"
-            android:theme="@style/AppTheme.NoActionBar" />
 
         <provider
             android:name="android.support.v4.content.FileProvider"

@@ -2,9 +2,9 @@ package com.example.zhongahiyi.healthy.activity;
 
 import android.Manifest;
 import android.annotation.TargetApi;
-import android.app.Activity;
 import android.content.ContentResolver;
 import android.content.ContentUris;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -28,8 +28,6 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.webkit.WebView;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -39,6 +37,8 @@ import com.example.zhongahiyi.healthy.fragment.FragmentNews;
 import com.example.zhongahiyi.healthy.fragment.FragmentDrug;
 import com.example.zhongahiyi.healthy.fragment.FragmentInfo;
 import com.example.zhongahiyi.healthy.fragment.FragmentMain;
+
+import com.example.zhongahiyi.healthy.R;
 import com.mxn.soul.flowingdrawer_core.ElasticDrawer;
 import com.mxn.soul.flowingdrawer_core.FlowingDrawer;
 import com.uuzuche.lib_zxing.activity.CaptureActivity;
@@ -58,7 +58,6 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import com.example.zhongahiyi.healthy.R;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener,IOnSearchClickListener, Toolbar.OnMenuItemClickListener{
@@ -75,6 +74,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private CircleImageView userAvator;
     private Uri imagUri;
     private LinearLayout medialart;
+    private static Context context;
 
     private SearchFragment searchFragment;
     private int[] items = new int[]{
@@ -86,6 +86,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             R.drawable.ic_albm
     };
 
+    public static Context getContext() {
+        return context;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -122,6 +125,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         drugscan.setOnClickListener(this);
         collect.setOnClickListener(this);
         feedBack.setOnClickListener(this);
+//        DBManager dbManager=new DBManager(getContext());
+//        dbManager.getDatabase();
         File file = new File(getExternalCacheDir(), "ChatHead.JPEG");
         if (file.exists()) {
             Bitmap bitmap = BitmapFactory.decodeFile(file.getAbsolutePath());
@@ -169,8 +174,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     }
                     if (bundle.getInt(CodeUtils.RESULT_TYPE) == CodeUtils.RESULT_SUCCESS) {
                         String result = bundle.getString(CodeUtils.RESULT_STRING);
-                        Intent intent=new Intent(MainActivity.this,DataSelectActivity.class);
-                        intent.putExtra("data",result);
+                        Intent intent = new Intent(MainActivity.this, DataSelectActivity.class);
+                        intent.putExtra("data", result);
                         startActivity(intent);
 //                        Toast.makeText(MainActivity.this, "阿莫西林胶囊已添加到您的药单", Toast.LENGTH_LONG).show();
                     } else if (bundle.getInt(CodeUtils.RESULT_TYPE) == CodeUtils.RESULT_FAILED) {
@@ -446,6 +451,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.ACCESS_FINE_LOCATION,
                             Manifest.permission.WRITE_SETTINGS, Manifest.permission.READ_EXTERNAL_STORAGE,
                             Manifest.permission.RECORD_AUDIO, Manifest.permission.READ_PHONE_STATE,
+                            Manifest.permission.CAMERA,
                             Manifest.permission.WRITE_SETTINGS}, 0x0010);
 
                 }

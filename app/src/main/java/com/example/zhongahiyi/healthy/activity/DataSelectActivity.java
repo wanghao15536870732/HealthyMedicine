@@ -1,8 +1,6 @@
 package com.example.zhongahiyi.healthy.activity;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.res.AssetManager;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -17,17 +15,11 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.example.zhongahiyi.healthy.R;
-import com.example.zhongahiyi.healthy.view.db.DBManager;
+import com.example.zhongahiyi.healthy.db.DBManager;
 import com.github.nukc.amountview.AmountView;
 import com.uuzuche.lib_zxing.activity.CaptureActivity;
 import com.uuzuche.lib_zxing.activity.CodeUtils;
 
-
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.List;
 
 import at.markushi.ui.CircleButton;
 
@@ -137,8 +129,13 @@ public class DataSelectActivity extends AppCompatActivity implements View.OnClic
             case R.id.button_right:
                 DBManager dbManager = new DBManager(DataSelectActivity.this);
                 SQLiteDatabase db1 = dbManager.getDatabase(DataSelectActivity.this);
-                Cursor cursor = db1.query("med", null, null, null, null, null, null);
-                cursor.close();
+                Cursor cursor = db1.query("durgclass", null, null, null, null, null, null);
+                if (cursor.moveToFirst()) {
+                    do {
+                        String res = cursor.getString(cursor.getColumnIndex("count"));
+                        Log.e("TAG", res);
+                    } while (cursor.moveToNext());
+                }
                 Toast.makeText(this, "数据库查询成功！", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.button_wrong:

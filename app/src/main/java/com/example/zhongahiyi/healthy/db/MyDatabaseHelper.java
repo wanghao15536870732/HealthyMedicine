@@ -1,4 +1,4 @@
-//package com.example.zhongahiyi.healthy.view.db;
+//package com.example.zhongahiyi.healthy.db;
 //
 //
 //import android.content.Context;
@@ -17,7 +17,7 @@
 //
 //    @Override
 //    public void onCreate(SQLiteDatabase db) {
-////        db.execSQL(CREAK_REMIND);
+//        db.execSQL(CREAK_REMIND);
 //
 //    }
 //

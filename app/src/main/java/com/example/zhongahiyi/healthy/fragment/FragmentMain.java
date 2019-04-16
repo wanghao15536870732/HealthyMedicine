@@ -1,5 +1,4 @@
 package com.example.zhongahiyi.healthy.fragment;
-
 import android.Manifest;
 import android.content.Intent;
 import android.os.Build;
@@ -26,6 +25,7 @@ import com.example.zhongahiyi.healthy.activity.AccurateActivity;
 import com.example.zhongahiyi.healthy.activity.MainActivity;
 import com.example.zhongahiyi.healthy.activity.RemindActivity;
 import com.example.zhongahiyi.healthy.activity.SearchActivity;
+import com.example.zhongahiyi.healthy.activity.RemindActivity;
 import com.example.zhongahiyi.healthy.adapter.MyAdapter;
 import com.example.zhongahiyi.healthy.bean.main.Icon;
 

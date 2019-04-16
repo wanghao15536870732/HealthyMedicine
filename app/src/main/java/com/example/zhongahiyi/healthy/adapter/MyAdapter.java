@@ -12,8 +12,6 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.zhongahiyi.healthy.R;
-
 import java.util.ArrayList;
 
 public abstract class MyAdapter<T> extends BaseAdapter {

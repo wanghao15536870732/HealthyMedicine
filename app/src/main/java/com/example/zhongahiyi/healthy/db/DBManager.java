@@ -1,4 +1,4 @@
-package com.example.zhongahiyi.healthy.view.db;
+package com.example.zhongahiyi.healthy.db;
 
 import android.content.Context;
 import android.content.res.AssetManager;

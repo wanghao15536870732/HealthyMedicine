@@ -15,6 +15,8 @@ import com.example.zhongahiyi.healthy.bean.drug.NewsBean;
 import com.example.zhongahiyi.healthy.utils.WebUtil;
 //import WebUtil;
 
+//import com.example.zhongahiyi.healthy.utils.WebUtil;
+
 import java.util.List;
 
 public class NewsListAdapter extends RecyclerView.Adapter<NewsListAdapter.ViewHolder>{
