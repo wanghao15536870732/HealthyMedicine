@@ -10,246 +10,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="455fc597-3712-44b9-9275-7a785934ea11" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle____local_aars___D__HealthyMedicine_app_libs_ocr_sdk_jar_unspecified_jar.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle____local_aars___D__HealthyMedicine_ocr_ui_libs_license_jar_unspecified_jar.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_animated_vector_drawable_25_1_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_appcompat_v7_25_1_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_annotations_25_1_1_jar.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_compat_25_1_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_ui_25_1_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_utils_25_1_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_fragment_25_1_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_media_compat_25_1_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_v4_25_1_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_vector_drawable_25_1_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_core_2_2_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_idling_resource_2_2_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_exposed_instrumentation_api_publish_0_5.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_rules_0_5.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_runner_0_5.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_wenwenwen888_searchbox_1_0_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_annotation_javax_annotation_api_1_2_jar.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libs/ocr-sdk.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/assets/aip.license" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/assets/med .db" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/activity/AccurateActivity.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/activity/ImageBrowsweActivity.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/activity/SearchActivity.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/adapter/SearchAdapter.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/bean/main/Search_item.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/jniLibs/arm64-v8a/libocr-sdk.so" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/jniLibs/armeabi-v7a/libocr-sdk.so" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/jniLibs/armeabi/libocr-sdk.so" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/jniLibs/x86/libocr-sdk.so" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/rounded_rectangle.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/btn_normal.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/btn_press.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/i_voice.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_search_black.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/selector_btn.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_accurate.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_image_browswe.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/search_ill.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/search_item.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/menu/main_menu.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/build.gradle" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/libs/license.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/ocr_ui.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/proguard-rules.pro" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/AndroidManifest.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/assets/models/integrity_model_secret.bin" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/assets/models/quality_model_secret.bin" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/java/com/baidu/idcardquality/IDcardQualityProcess.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/java/com/baidu/ocr/ui/camera/Camera1Control.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/java/com/baidu/ocr/ui/camera/Camera2Control.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/java/com/baidu/ocr/ui/camera/CameraActivity.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/java/com/baidu/ocr/ui/camera/CameraNativeHelper.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/java/com/baidu/ocr/ui/camera/CameraThreadPool.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/java/com/baidu/ocr/ui/camera/CameraView.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/java/com/baidu/ocr/ui/camera/ICameraControl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/java/com/baidu/ocr/ui/camera/MaskView.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/java/com/baidu/ocr/ui/camera/OCRCameraLayout.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/java/com/baidu/ocr/ui/camera/OCRFrameLayout.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/java/com/baidu/ocr/ui/camera/PermissionCallback.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/java/com/baidu/ocr/ui/crop/CropView.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/java/com/baidu/ocr/ui/crop/FrameOverlayView.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/java/com/baidu/ocr/ui/util/DimensionUtil.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/java/com/baidu/ocr/ui/util/ImageUtil.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/jniLibs/arm64-v8a/libidcard_quality.1.1.1.so" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/jniLibs/arm64-v8a/libidl_license.so" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/jniLibs/armeabi-v7a/libidcard_quality.1.1.1.so" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/jniLibs/armeabi-v7a/libidl_license.so" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/jniLibs/armeabi/libidcard_quality.1.1.1.so" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/jniLibs/armeabi/libidl_license.so" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/jniLibs/x86/libidcard_quality.1.1.1.so" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/jniLibs/x86/libidl_license.so" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/drawable-xhdpi/bd_ocr_cancel.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/drawable-xhdpi/bd_ocr_close.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/drawable-xhdpi/bd_ocr_confirm.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/drawable-xhdpi/bd_ocr_gallery.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/drawable-xhdpi/bd_ocr_hint_align_bank_card.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/drawable-xhdpi/bd_ocr_hint_align_id_card.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/drawable-xhdpi/bd_ocr_hint_align_id_card_back.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/drawable-xhdpi/bd_ocr_id_card_locator_back.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/drawable-xhdpi/bd_ocr_id_card_locator_front.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/drawable-xhdpi/bd_ocr_light_off.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/drawable-xhdpi/bd_ocr_light_on.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/drawable-xhdpi/bd_ocr_passport_locator.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/drawable-xhdpi/bd_ocr_reset.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/drawable-xhdpi/bd_ocr_rotate.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/drawable-xhdpi/bd_ocr_round_corner.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/drawable-xhdpi/bd_ocr_take_photo_highlight.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/drawable-xhdpi/bd_ocr_take_photo_normal.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/drawable-xhdpi/bd_ocr_take_photo_selector.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/layout/bd_ocr_activity_camera.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/layout/bd_ocr_confirm_result.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/layout/bd_ocr_crop.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/layout/bd_ocr_take_picture.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/mipmap-hdpi/ic_launcher.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/mipmap-mdpi/ic_launcher.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/mipmap-xhdpi/ic_launcher.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/mipmap-xxhdpi/ic_launcher.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/mipmap-xxxhdpi/ic_launcher.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/values/bd_ocr_dimensions.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/values/bd_ocr_widgets.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/values/colors.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/values/strings.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/values/styles.xml" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/resourceHashesCache.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/resourceHashesCache.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/jarAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/jarAnalysis.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskJars.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskJars.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" />
-      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_runtime_1_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_runtime_1_1_1.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_1_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_1_1_1.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_core_1_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_core_1_1_1.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_runtime_1_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_runtime_1_1_1.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_viewmodel_1_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_viewmodel_1_1_1.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_animated_vector_drawable_28_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_animated_vector_drawable_28_0_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_appcompat_v7_28_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_appcompat_v7_28_0_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_asynclayoutinflater_28_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_asynclayoutinflater_28_0_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_cardview_v7_28_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_cardview_v7_28_0_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_1_1_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_1_1_3.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_coordinatorlayout_28_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_coordinatorlayout_28_0_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_cursoradapter_28_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_cursoradapter_28_0_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_customview_28_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_customview_28_0_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_design_28_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_design_28_0_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_documentfile_28_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_documentfile_28_0_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_drawerlayout_28_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_drawerlayout_28_0_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_interpolator_28_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_interpolator_28_0_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_loader_28_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_loader_28_0_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_localbroadcastmanager_28_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_localbroadcastmanager_28_0_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_print_28_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_print_28_0_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_recyclerview_v7_28_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_recyclerview_v7_28_0_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_slidingpanelayout_28_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_slidingpanelayout_28_0_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_compat_28_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_compat_28_0_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_ui_28_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_ui_28_0_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_utils_28_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_utils_28_0_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_fragment_28_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_fragment_28_0_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_vector_drawable_28_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_vector_drawable_28_0_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_swiperefreshlayout_28_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_swiperefreshlayout_28_0_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_core_3_0_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_core_3_0_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_idling_resource_3_0_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_idling_resource_3_0_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_monitor_1_0_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_monitor_1_0_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_runner_1_0_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_runner_1_0_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_transition_28_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_transition_28_0_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_versionedparcelable_28_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_versionedparcelable_28_0_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_viewpager_28_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_viewpager_28_0_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_CymChad_BaseRecyclerViewAdapterHelper_2_1_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_CymChad_BaseRecyclerViewAdapterHelper_2_1_3.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mxn_soul_flowingdrawer_core_2_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mxn_soul_flowingdrawer_core_2_0_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_novaapps_FloatingActionMenu_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_novaapps_FloatingActionMenu_1_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_ycl_tabview_library_tabviewlibrary_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_ycl_tabview_library_tabviewlibrary_1_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__de_hdodenhof_circleimageview_3_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__de_hdodenhof_circleimageview_3_0_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxandroid_1_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxandroid_1_0_1.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_michaelbel_bottomsheet_1_2_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_michaelbel_bottomsheet_1_2_3.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/HealthyMedicine/.gitignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/HealthyMedicine/LICENSE" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/HealthyMedicine/README.md" afterPath="" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/view/activity/DrugDetailActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/activity/DrugDetailActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/view/activity/LoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/activity/LoginActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/view/activity/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/activity/MainActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/view/activity/RegisterActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/activity/RegisterActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/view/activity/RemindActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/activity/RemindActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/view/activity/SettintActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/activity/SettintActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/view/activity/WebUIActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/activity/WebUIActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/view/adapter/InfoFragmentAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/adapter/InfoFragmentAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/view/adapter/InfoTabAdopter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/adapter/InfoTabAdopter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/view/adapter/Info_Recyle_Adapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/adapter/Info_Recyle_Adapter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/view/adapter/Info_Recyle_Holder.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/adapter/Info_Recyle_Holder.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/view/adapter/LeftAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/adapter/LeftAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/view/adapter/MyAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/adapter/MyAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/view/adapter/NewsFragmentAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/adapter/NewsFragmentAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/view/adapter/NewsListAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/adapter/NewsListAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/view/adapter/NewsTabAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/adapter/NewsTabAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/view/adapter/Remind_Adapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/adapter/Remind_Adapter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/view/adapter/RightAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/adapter/RightAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/view/application/MyApplication.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/application/MyApplication.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/view/bean/AccenteEnum.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/bean/AccenteEnum.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/view/bean/DictationResult.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/bean/DictationResult.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/view/bean/DomainEnum.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/bean/DomainEnum.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/view/bean/LanguageEnum.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/bean/LanguageEnum.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/view/bean/SpeechPeopleEnum.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/bean/SpeechPeopleEnum.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/view/bean/drug/DrugBean.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/bean/drug/DrugBean.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/view/bean/drug/DrugItem.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/bean/drug/DrugItem.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/view/bean/drug/NewsBean.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/bean/drug/NewsBean.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/view/bean/info/DateBean.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/bean/info/DateBean.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/view/bean/info/DateConstant.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/bean/info/DateConstant.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/view/bean/info/Info_item.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/bean/info/Info_item.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/view/bean/main/Icon.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/bean/main/Icon.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/view/bean/main/Remind_item.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/bean/main/Remind_item.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/view/bean/news/ClassBean.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/bean/news/ClassBean.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/view/bean/news/Constant.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/bean/news/Constant.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/view/fragment/FragmentDrug.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/fragment/FragmentDrug.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/view/fragment/FragmentInfo.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/fragment/FragmentInfo.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/view/fragment/FragmentMain.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/fragment/FragmentMain.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/view/fragment/FragmentNews.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/fragment/FragmentNews.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/view/fragment/InfoListFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/fragment/InfoListFragment.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/view/fragment/NewsListFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/fragment/NewsListFragment.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/view/ui/GuideActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/ui/GuideActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/view/ui/SplashActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/ui/SplashActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/view/utils/ImageLoaderUtils.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/utils/ImageLoaderUtils.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/view/utils/RecognitionManager.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/utils/RecognitionManager.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/view/utils/SnackBarUtil.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/utils/SnackBarUtil.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/view/utils/SynthesisManager.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/utils/SynthesisManager.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/view/utils/WebUtil.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/utils/WebUtil.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_albm.xml" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_albm.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_camera_.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_delete.xml" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_delete.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_feedback_left.xml" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_feedback_left.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_history_left.xml" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_history_left.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_remind_left.xml" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_remind_left.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_scan.xml" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_scan.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_search.xml" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_search.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_info.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_info.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/main_item_grid.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/main_item_grid.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/remind_eat_medcine.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/remind_eat_medcine.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/lint-cache/maven.google/com/android/support/constraint/group-index.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/lint-cache/maven.google/com/android/support/group-index.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/lint-cache/maven.google/com/android/support/test/espresso/group-index.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/lint-cache/maven.google/com/android/support/test/group-index.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/lint-cache/maven.google/master-index.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
+      <change beforePath="$PROJECT_DIR$/ocr_ui/build/intermediates/attr/R.txt" afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/attr/R.txt" />
+      <change beforePath="$PROJECT_DIR$/ocr_ui/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" />
+      <change beforePath="$PROJECT_DIR$/ocr_ui/build/intermediates/incremental/packageDebugResources/merged.dir/values/values.xml" afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/incremental/packageDebugResources/merged.dir/values/values.xml" />
+      <change beforePath="$PROJECT_DIR$/ocr_ui/build/intermediates/incremental/packageDebugResources/merger.xml" afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/incremental/packageDebugResources/merger.xml" />
+      <change beforePath="$PROJECT_DIR$/ocr_ui/build/intermediates/manifests/aapt/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/manifests/aapt/debug/AndroidManifest.xml" />
+      <change beforePath="$PROJECT_DIR$/ocr_ui/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
+      <change beforePath="$PROJECT_DIR$/ocr_ui/build/intermediates/packaged_res/debug/values/values.xml" afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/packaged_res/debug/values/values.xml" />
+      <change beforePath="$PROJECT_DIR$/ocr_ui/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" />
+      <change beforePath="$PROJECT_DIR$/ocr_ui/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/symbols/debug/R.txt" />
+      <change beforePath="$PROJECT_DIR$/ocr_ui/ocr_ui.iml" afterPath="$PROJECT_DIR$/ocr_ui/ocr_ui.iml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -266,42 +45,49 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <projects_view />
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="HealthyMedicine" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/activity/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="354" column="37" lean-forward="true" selection-start-line="354" selection-start-column="37" selection-end-line="354" selection-end-column="37" />
+            <state relative-caret-position="-528">
+              <caret line="65" column="19" lean-forward="false" selection-start-line="65" selection-start-column="19" selection-end-line="65" selection-end-column="19" />
               <folding>
-                <element signature="e#2672#2691#0" expanded="true" />
-                <element signature="e#2705#2731#0" expanded="true" />
-                <element signature="e#7428#9095#0" expanded="true" />
-                <element signature="e#9094#9095#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main_menu.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/main_menu.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
+      <file leaf-file-name="DomainEnum.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/bean/DomainEnum.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="48">
-              <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+              <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="i_voice.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/i_voice.xml">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+          <provider editor-type-id="android-manifest">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -329,7 +115,7 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
+            <state relative-caret-position="1080">
               <caret line="45" column="13" lean-forward="false" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
               <folding />
             </state>
@@ -342,7 +128,7 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-144">
+            <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -352,7 +138,7 @@
       <file leaf-file-name="AccurateActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/activity/AccurateActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-216">
+            <state relative-caret-position="72">
               <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
               <folding />
             </state>
@@ -367,9 +153,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="528">
               <caret line="22" column="25" lean-forward="false" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
-              <folding>
-                <element signature="e#3298#3338#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -379,10 +163,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="696">
               <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-              <folding>
-                <element signature="e#2745#2899#0" expanded="true" />
-                <element signature="e#2898#2899#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -390,7 +171,7 @@
       <file leaf-file-name="DrugDetailActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/activity/DrugDetailActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
+            <state relative-caret-position="768">
               <caret line="56" column="46" lean-forward="false" selection-start-line="56" selection-start-column="46" selection-end-line="56" selection-end-column="46" />
               <folding />
             </state>
@@ -3427,11 +3208,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="2693" />
-    <option name="y" value="170" />
-    <option name="width" value="1938" />
-    <option name="height" value="1048" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="2391" />
+    <option name="y" value="-9" />
+    <option name="width" value="2418" />
+    <option name="height" value="1318" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -3451,7 +3232,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -3607,9 +3388,9 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -3798,39 +3579,38 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2391" y="-9" width="2418" height="1318" extended-state="7" />
-    <editor active="true" />
+    <frame x="2391" y="-9" width="2418" height="1318" extended-state="6" />
     <layout>
-      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23336178" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291815" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5240213" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18899317" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3282918" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291815" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21757679" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24911033" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32977816" sideWeight="0.49526066" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32977816" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977816" sideWeight="0.50473934" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23336178" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291815" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -3843,198 +3623,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_web.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/3ae8d440bd0b8cd5e445fbe0112f8846/jars/classes.jar!/android/support/v7/widget/Toolbar.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="311" column="24" lean-forward="false" selection-start-line="311" selection-start-column="24" selection-end-line="311" selection-end-column="24" />
-          <folding>
-            <marker date="1537611005852" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1537611005852" expanded="false" signature="149:2226" ph="..." />
-            <marker date="1537611005852" expanded="false" signature="4116:4127" ph=" { " />
-            <marker date="1537611005852" expanded="false" signature="4161:4167" ph=" }" />
-            <marker date="1537611005852" expanded="true" signature="4235:4291" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="4377:9382" ph="{...}" />
-            <marker date="1537611005852" expanded="false" signature="4627:4759" ph="onMenuItemClick(item) → {" />
-            <marker date="1537611005852" expanded="false" signature="4908:4923" ph="}" />
-            <marker date="1537611005852" expanded="false" signature="4966:5014" ph="run() → {" />
-            <marker date="1537611005852" expanded="false" signature="5072:5087" ph="}" />
-            <marker date="1537611005852" expanded="true" signature="9435:9741" ph="{...}" />
-            <marker date="1537611005852" expanded="false" signature="9773:9784" ph=" { " />
-            <marker date="1537611005852" expanded="false" signature="9808:9814" ph=" }" />
-            <marker date="1537611005852" expanded="true" signature="9888:10079" ph="{...}" />
-            <marker date="1537611005852" expanded="false" signature="10117:10128" ph=" { " />
-            <marker date="1537611005852" expanded="false" signature="10158:10164" ph=" }" />
-            <marker date="1537611005852" expanded="true" signature="10214:10292" ph="{...}" />
-            <marker date="1537611005852" expanded="false" signature="10328:10339" ph=" { " />
-            <marker date="1537611005852" expanded="false" signature="10367:10373" ph=" }" />
-            <marker date="1537611005852" expanded="true" signature="10421:10497" ph="{...}" />
-            <marker date="1537611005852" expanded="false" signature="10533:10544" ph=" { " />
-            <marker date="1537611005852" expanded="false" signature="10572:10578" ph=" }" />
-            <marker date="1537611005852" expanded="true" signature="10626:10702" ph="{...}" />
-            <marker date="1537611005852" expanded="false" signature="10741:10752" ph=" { " />
-            <marker date="1537611005852" expanded="false" signature="10783:10789" ph=" }" />
-            <marker date="1537611005852" expanded="true" signature="10840:10919" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="10981:11195" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="11245:11332" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="11414:11528" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="11573:11661" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="11749:11841" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="11881:11964" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="12004:12087" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="12206:13639" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="13677:13781" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="13860:14418" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="14463:14965" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="14997:15081" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="15140:15214" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="15277:15489" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="15536:15630" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="15666:15794" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="15839:15958" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="15997:16205" ph="{...}" />
-            <marker date="1537611005852" expanded="false" signature="16241:16252" ph=" { " />
-            <marker date="1537611005852" expanded="false" signature="16275:16281" ph=" }" />
-            <marker date="1537611005852" expanded="false" signature="16329:16340" ph=" { " />
-            <marker date="1537611005852" expanded="false" signature="16388:16394" ph=" }" />
-            <marker date="1537611005852" expanded="true" signature="16441:17593" ph="{...}" />
-            <marker date="1537611005852" expanded="false" signature="17632:17643" ph=" { " />
-            <marker date="1537611005852" expanded="false" signature="17669:17675" ph=" }" />
-            <marker date="1537611005852" expanded="true" signature="17727:17794" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="17847:19065" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="19144:19315" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="19397:19577" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="19634:19786" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="19846:20007" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="20081:20185" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="20257:20364" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="20450:20677" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="20737:20834" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="20895:21434" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="21490:21584" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="21657:21758" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="21786:21861" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="21920:22000" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="22054:22137" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="22169:22650" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="22686:23304" ph="{...}" />
-            <marker date="1537611005852" expanded="false" signature="23348:23359" ph=" { " />
-            <marker date="1537611005852" expanded="false" signature="23409:23415" ph=" }" />
-            <marker date="1537611005852" expanded="true" signature="23465:23535" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="23622:23679" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="23766:23886" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="23926:24014" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="24052:24138" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="24226:24347" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="24386:24473" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="24513:24601" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="24655:24801" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="24884:25272" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="25321:25455" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="25528:25886" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="25933:26111" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="26156:26505" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="26551:26687" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="26734:26870" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="26911:27295" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="27333:28139" ph="{...}" />
-            <marker date="1537611005852" expanded="false" signature="27964:28033" ph="onClick(v) → {" />
-            <marker date="1537611005852" expanded="false" signature="28101:28120" ph="}" />
-            <marker date="1537611005852" expanded="true" signature="28199:28783" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="28832:29233" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="29295:30022" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="30064:30184" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="30228:30335" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="30385:30823" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="30873:31312" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="31463:32304" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="32475:33413" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="33452:33902" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="33978:39949" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="40024:50109" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="50195:50907" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="51009:51493" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="51597:52086" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="52149:53386" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="53441:53651" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="53727:54802" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="54859:55215" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="55261:55354" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="55401:55588" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="55633:55763" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="55838:55912" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="56009:56470" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="56537:56593" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="56674:56761" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="56815:56901" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="56979:57130" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="57179:57588" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="57634:57838" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="57888:57974" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="58067:58145" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="58288:58489" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="58530:58649" ph="{...}" />
-            <marker date="1537611005852" expanded="false" signature="58704:58715" ph=" { " />
-            <marker date="1537611005852" expanded="false" signature="58753:58759" ph=" }" />
-            <marker date="1537611005852" expanded="false" signature="58790:58801" ph=" { " />
-            <marker date="1537611005852" expanded="false" signature="58827:58833" ph=" }" />
-            <marker date="1537611005852" expanded="true" signature="58910:63143" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="59025:59036" ph="{}" />
-            <marker date="1537611005852" expanded="true" signature="59105:59315" ph="{...}" />
-            <marker date="1537611005852" expanded="false" signature="59368:59383" ph=" { " />
-            <marker date="1537611005852" expanded="false" signature="59395:59405" ph=" }" />
-            <marker date="1537611005852" expanded="true" signature="59459:60132" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="60179:60190" ph="{}" />
-            <marker date="1537611005852" expanded="false" signature="60256:60271" ph=" { " />
-            <marker date="1537611005852" expanded="false" signature="60284:60294" ph=" }" />
-            <marker date="1537611005852" expanded="true" signature="60374:60385" ph="{}" />
-            <marker date="1537611005852" expanded="false" signature="60427:60442" ph=" { " />
-            <marker date="1537611005852" expanded="false" signature="60455:60465" ph=" }" />
-            <marker date="1537611005852" expanded="true" signature="60548:62204" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="62289:62915" ph="{...}" />
-            <marker date="1537611005852" expanded="false" signature="62943:62958" ph=" { " />
-            <marker date="1537611005852" expanded="false" signature="62967:62977" ph=" }" />
-            <marker date="1537611005852" expanded="false" signature="63026:63041" ph=" { " />
-            <marker date="1537611005852" expanded="false" signature="63053:63063" ph=" }" />
-            <marker date="1537611005852" expanded="true" signature="63126:63137" ph="{}" />
-            <marker date="1537611005852" expanded="true" signature="63202:64475" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="63379:63833" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="63467:63541" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="63609:63694" ph="{...}" />
-            <marker date="1537611005852" expanded="false" signature="63754:63773" ph=" { " />
-            <marker date="1537611005852" expanded="false" signature="63809:63823" ph=" }" />
-            <marker date="1537611005852" expanded="false" signature="63876:63891" ph=" { " />
-            <marker date="1537611005852" expanded="false" signature="63923:63933" ph=" }" />
-            <marker date="1537611005852" expanded="true" signature="63996:64155" ph="{...}" />
-            <marker date="1537611005852" expanded="false" signature="64205:64220" ph=" { " />
-            <marker date="1537611005852" expanded="false" signature="64238:64248" ph=" }" />
-            <marker date="1537611005852" expanded="true" signature="64307:64469" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="64568:66211" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="64775:64847" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="64900:65013" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="65079:65192" ph="{...}" />
-            <marker date="1537611005852" expanded="false" signature="65234:65249" ph=" { " />
-            <marker date="1537611005852" expanded="false" signature="65271:65281" ph=" }" />
-            <marker date="1537611005852" expanded="true" signature="65340:65457" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="65541:65611" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="65668:65786" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="65860:65930" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="65994:66205" ph="{...}" />
-            <marker date="1537611005852" expanded="true" signature="66258:66313" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
       <provider editor-type-id="android-designer2">
         <state />
@@ -4087,7 +3675,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4095,7 +3682,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4103,7 +3689,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4114,7 +3699,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="3" column="41" lean-forward="false" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4122,18 +3706,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_camera_.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_camera_.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/main_item_grid.xml">
       <provider editor-type-id="android-designer2">
         <state />
@@ -4162,7 +3738,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4186,7 +3761,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4194,7 +3768,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4202,7 +3775,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4210,7 +3782,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4218,7 +3789,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4226,7 +3796,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4234,7 +3803,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4242,7 +3810,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4250,7 +3817,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4258,7 +3824,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4266,7 +3831,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4274,7 +3838,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4290,7 +3853,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4298,7 +3860,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="2" column="36" lean-forward="false" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4306,7 +3867,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4314,7 +3874,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4333,7 +3892,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4377,65 +3935,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/activity/DrugDetailActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="56" column="46" lean-forward="false" selection-start-line="56" selection-start-column="46" selection-end-line="56" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_info.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="22" column="25" lean-forward="false" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
-          <folding>
-            <element signature="e#3298#3338#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/activity/SearchActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="696">
-          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding>
-            <element signature="e#2745#2899#0" expanded="true" />
-            <element signature="e#2898#2899#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/i_voice.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/search_ill.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-144">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/activity/AccurateActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-216">
-          <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/main_menu.xml">
       <provider editor-type-id="android-designer2">
         <state />
@@ -4443,6 +3942,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/i_voice.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -4463,22 +3970,84 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
+        <state relative-caret-position="1080">
           <caret line="45" column="13" lean-forward="false" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/search_ill.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/activity/AccurateActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_info.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="22" column="25" lean-forward="false" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/activity/SearchActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/activity/DrugDetailActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="768">
+          <caret line="56" column="46" lean-forward="false" selection-start-line="56" selection-start-column="46" selection-end-line="56" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/activity/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="354" column="37" lean-forward="true" selection-start-line="354" selection-start-column="37" selection-end-line="354" selection-end-column="37" />
+        <state relative-caret-position="-528">
+          <caret line="65" column="19" lean-forward="false" selection-start-line="65" selection-start-column="19" selection-end-line="65" selection-end-column="19" />
           <folding>
-            <element signature="e#2672#2691#0" expanded="true" />
-            <element signature="e#2705#2731#0" expanded="true" />
-            <element signature="e#7428#9095#0" expanded="true" />
-            <element signature="e#9094#9095#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/zhongahiyi/healthy/bean/DomainEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
