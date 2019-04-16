@@ -9,6 +9,10 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            //选择要添加的对应CPU类型的so
+            abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a', 'x86'
+        }
     }
     buildTypes {
         release {
@@ -40,4 +44,6 @@ dependencies {
     implementation 'io.reactivex:rxjava:1.1.0'
     implementation 'com.novaapps:FloatingActionMenu:1.0'
     implementation 'org.michaelbel:bottomsheet:1.2.3'
+    implementation project(path: ':ocr_ui')
+    implementation 'com.wenwenwen888:searchbox:1.0.1'
 }
