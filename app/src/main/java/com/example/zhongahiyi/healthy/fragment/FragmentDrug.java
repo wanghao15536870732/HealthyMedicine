@@ -99,13 +99,13 @@ public class FragmentDrug extends Fragment {
             drugBean1 = new DrugBean();
             String jibing = cursor.getString(0);
             drugBean1.setTitle(jibing);
-            Log.e("TAG", jibing);
+//            Log.e("TAG", jibing);
             Cursor cursor2 = db1.rawQuery("select durgId from durgclass where jibing = ? ", new String[]{jibing});
             while (cursor2.moveToNext()) {
                 String id = cursor2.getString(0);
                 String[] stringarr = id.split(",");
                 for (String s : stringarr) {
-                    Log.e("TAG", s);
+//                    Log.e("TAG", s);
                     Cursor cursor3 = db1.rawQuery("select 药品名称,作用类别,Image1 from med where id= ?", new String[]{s});
                     while (cursor3.moveToNext()) {
                         try {
@@ -117,7 +117,7 @@ public class FragmentDrug extends Fragment {
                             }
 //                            Log.e("TAG", drug_name);
 //                            Log.e("TAG", drug_leibie);
-                            Log.e("TAG", dur_pic);
+//                            Log.e("TAG", dur_pic);
                             drugItem = new DrugItem(dur_pic, drug_name, drug_leibie);
                             drugItems1.add(drugItem);
                         }
