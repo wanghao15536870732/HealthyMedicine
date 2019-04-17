@@ -140,6 +140,7 @@ public class DataSelectActivity extends AppCompatActivity implements View.OnClic
                 break;
             case R.id.button_wrong:
                 Intent intent1 = new Intent(DataSelectActivity.this, MainActivity.class);
+                this.finish();
                 startActivity(intent1);
                 break;
             default:

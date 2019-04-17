@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.SettingActivity"
+    tools:showIn="@layout/activity_setting">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/setting_drug"
+                        android:layout_width="@dimen/dp_40"
+                        android:layout_height="@dimen/dp_40"
+                        android:src="@drawable/ic_drug" />
+
+                    <EditText
+                        android:id="@+id/setting_durg_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_toRightOf="@+id/setting_drug"
+                        android:gravity="center"
+                        android:hint="请输入您的药物名称"
+                        android:maxLines="1" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/drug_jiliang"
+                        android:layout_width="@dimen/dp_40"
+                        android:layout_height="@dimen/dp_40"
+                        android:src="@drawable/ic_jiliang" />
+
+                    <EditText
+                        android:id="@+id/jiliang_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/drug_jiliang"
+                        android:gravity="center"
+                        android:hint="请输入您服药的剂量"
+                        android:inputType="number"
+                        android:maxLines="1" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/durg_remind_begin"
+                        android:layout_width="@dimen/dp_40"
+                        android:layout_height="@dimen/dp_40"
+                        android:src="@drawable/ic_rili" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_40"
+                        android:layout_toRightOf="@id/durg_remind_begin"
+                        android:gravity="center"
+                        android:text="请选择药物使用开始时间"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+                    <CalendarView
+                        android:id="@+id/durg_begin_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/durg_remind_begin"></CalendarView>
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/durg_remind_end"
+                        android:layout_width="@dimen/dp_40"
+                        android:layout_height="@dimen/dp_40"
+                        android:src="@drawable/ic_rili" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_40"
+                        android:layout_toRightOf="@id/durg_remind_end"
+                        android:gravity="center"
+                        android:text="请选择药物使用结束时间"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+                    <CalendarView
+                        android:id="@+id/durg_end_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/durg_remind_end"></CalendarView>
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/durg_remind_time"
+                        android:layout_width="@dimen/dp_40"
+                        android:layout_height="@dimen/dp_40"
+                        android:src="@drawable/ic_eatm_time" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_40"
+                        android:layout_toRightOf="@id/durg_remind_time"
+                        android:gravity="center"
+                        android:text="请选择每天提醒您的时间"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+                    <EditText
+                        android:id="@+id/durg_remind_time_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/durg_remind_time"
+                        android:gravity="center"
+                        android:hint="请输入您的提醒时间"
+                        android:inputType="time"
+                        android:maxLines="1" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/durg_alart_beizhu"
+                        android:layout_width="@dimen/dp_40"
+                        android:layout_height="@dimen/dp_40"
+                        android:src="@drawable/ic_jishiben" />
+
+                    <EditText
+                        android:id="@+id/durg_alart_beizhu_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_toRightOf="@id/durg_alart_beizhu"
+                        android:gravity="center"
+                        android:hint="请输入您的备注" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_15"
+                android:orientation="horizontal">
+
+                <at.markushi.ui.CircleButton
+                    android:id="@+id/button_right1"
+                    android:layout_width="64dp"
+                    android:layout_height="@dimen/dp_64"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/dp_40"
+                    android:src="@drawable/ic_right"
+                    app:cb_color="@color/colorPrimary"
+                    app:cb_pressedRingWidth="8dp" />
+
+
+                <at.markushi.ui.CircleButton
+                    android:id="@+id/button_wrong1"
+                    android:layout_width="70dp"
+                    android:layout_height="@dimen/dp_70"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp_40"
+                    android:src="@drawable/ic_wrong"
+                    app:cb_color="@color/colorPrimary"
+                    app:cb_pressedRingWidth="8dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.constraint.ConstraintLayout>
