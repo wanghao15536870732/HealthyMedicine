@@ -34,6 +34,8 @@
         <activity android:name=".activity.WebUIActivity" />
         <activity android:name=".activity.RemindActivity" />
         <activity android:name=".activity.SearchActivity" />
+        <activity android:name=".activity.HistoryActivity"/>
+
 
         <provider
             android:name="android.support.v4.content.FileProvider"
@@ -46,7 +48,10 @@
         </provider>
 
         <activity android:name=".activity.AccurateActivity" />
-        <activity android:name=".activity.ImageBrowsweActivity"></activity>
+        <activity android:name=".activity.ImageBrowsweActivity" />
+        <activity
+            android:name=".activity.CollectActivity"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

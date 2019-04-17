@@ -23,6 +23,8 @@ import com.baidu.ocr.sdk.exception.OCRError;
 import com.baidu.ocr.sdk.model.AccessToken;
 import com.example.zhongahiyi.healthy.R;
 import com.example.zhongahiyi.healthy.activity.AccurateActivity;
+import com.example.zhongahiyi.healthy.activity.CollectActivity;
+import com.example.zhongahiyi.healthy.activity.HistoryActivity;
 import com.example.zhongahiyi.healthy.activity.MainActivity;
 import com.example.zhongahiyi.healthy.activity.RemindActivity;
 import com.example.zhongahiyi.healthy.activity.SearchActivity;
@@ -73,6 +75,12 @@ public class FragmentMain extends Fragment {
                 switch (position){
                     case 0:
                         startActivity(new Intent(getContext(), SearchActivity.class));
+                        break;
+                    case 2:
+                        startActivity(new Intent(getContext(), CollectActivity.class));
+                        break;
+                    case 3:
+                        startActivity(new Intent(getContext(), HistoryActivity.class));
                         break;
                     case 4:
                         startActivity(new Intent(getContext(), RemindActivity.class));
