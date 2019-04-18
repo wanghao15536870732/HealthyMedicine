@@ -1,9 +1,13 @@
 package com.example.zhongahiyi.healthy.fragment;
 
+import android.Manifest;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.GridLayoutManager;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,14 +17,23 @@ import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.Toast;
 
+import com.baidu.ocr.sdk.OCR;
+import com.baidu.ocr.sdk.OnResultListener;
+import com.baidu.ocr.sdk.exception.OCRError;
+import com.baidu.ocr.sdk.model.AccessToken;
 import com.example.zhongahiyi.healthy.R;
+import com.example.zhongahiyi.healthy.activity.AccurateActivity;
 import com.example.zhongahiyi.healthy.activity.MainActivity;
+import com.example.zhongahiyi.healthy.activity.RemindActivity;
+import com.example.zhongahiyi.healthy.activity.SearchActivity;
 import com.example.zhongahiyi.healthy.activity.RemindActivity;
 import com.example.zhongahiyi.healthy.activity.SettingActivity;
 import com.example.zhongahiyi.healthy.adapter.MyAdapter;
 import com.example.zhongahiyi.healthy.bean.main.Icon;
 
 import java.util.ArrayList;
+
+import static android.content.pm.PackageManager.PERMISSION_GRANTED;
 
 public class FragmentMain extends Fragment {
     private GridView grid_photo;
@@ -72,19 +85,31 @@ public class FragmentMain extends Fragment {
                         break;
                     case 2:
 //                        startActivity(new Intent(getContext(), CollectActivity.class));
-                        break;
-                    case 4:
-                        startActivity(new Intent(getContext(), RemindActivity.class));
-                        break;
-                    case 5:
-//                        startActivity(new Intent(getContext(), AccurateActivity.class));
-                        break;
-                    default:
-                        Toast.makeText(getContext(), "你点击了~" + position + "~项", Toast.LENGTH_SHORT).show();
-                        break;
+                        grid_photo.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                            @Override
+                            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                                switch (position) {
+                                    case 0:
+                                        startActivity(new Intent(getContext(), SearchActivity.class));
+                                        break;
+                                    case 4:
+                                        startActivity(new Intent(getContext(), RemindActivity.class));
+                                        break;
+                                    case 5:
+                                        startActivity(new Intent(getContext(), AccurateActivity.class));
+                                        break;
+
+                                    default:
+                                        Toast.makeText(getContext(), "你点击了~" + position + "~项", Toast.LENGTH_SHORT).show();
+                                        break;
+                                }
+                            }
+
+                        });
+
+
                 }
             }
-
         });
         return view;
     }

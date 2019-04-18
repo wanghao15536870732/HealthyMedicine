@@ -7,7 +7,6 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -92,7 +91,7 @@ public class FragmentDrug extends Fragment {
         DrugItem drugItems;
 //        List<DrugItem> drugItems1 = new ArrayList<>();
         DrugBean drugBean1;
-        SQLiteDatabase db1 = dbManager.getDatabase();
+        SQLiteDatabase db1 = dbManager.getDatabase(MainActivity.getContext());
         Cursor cursor = db1.rawQuery("select jibing from durgclass", null);
         while (cursor.moveToNext()) {
             List<DrugItem> drugItems1 = new ArrayList<>();
@@ -120,12 +119,9 @@ public class FragmentDrug extends Fragment {
 //                            Log.e("TAG", dur_pic);
                             drugItem = new DrugItem(dur_pic, drug_name, drug_leibie);
                             drugItems1.add(drugItem);
-                        }
-                        catch (Exception e)
-                        {
+                        } catch (Exception e) {
                             e.printStackTrace();
-                        }
-                        finally {
+                        } finally {
                             cursor3.close();
                             continue;
                         }
@@ -140,58 +136,3 @@ public class FragmentDrug extends Fragment {
         listBeanList.addAll(drugBeanList.get(0).getmList());
     }
 }
-
-//        //药的种类
-//        DrugItem drug1 = new DrugItem("http://ppwkqlsve.bkt.clouddn.com/drug1.jpg", "琥珀还睛丸", "补益肝肾，清热明目。用于肝肾两亏，虚火上炎。");
-//        DrugItem drug2 = new DrugItem("http://ppwkqlsve.bkt.clouddn.com/drug2.jpg", "荷叶丸", "凉血止血。用于血热所致的咯血、衄血、尿血、便血、崩漏。");
-//        DrugItem drug3 = new DrugItem("http://ppwkqlsve.bkt.clouddn.com/drug3.jpg", "河车大造丸", "滋阴清热，补肾益肺。用于肺肾两亏，虚劳咳嗽，骨蒸潮热，盗汗遗精，腰膝酸软。");
-//        DrugItem drug4 = new DrugItem("http://ppwkqlsve.bkt.clouddn.com/drug4.jpg", "硝苯地平控释片", "1．高血压 2．冠心病 慢性稳定型心绞痛(劳累性心绞痛)");
-//        DrugItem drug5 = new DrugItem("http://ppwkqlsve.bkt.clouddn.com/drug5.jpg", "阿卡波糖片", "配合饮食控制治疗糖尿病。");
-//        DrugItem drug6 = new DrugItem("http://ppwkqlsve.bkt.clouddn.com/drug6.jpg", "尼莫地平片", "可预防和治疗由于动脉瘤性蛛网膜下腔出血后脑血管痉挛引起的缺血性神经损伤。");
-//病的种类
-//        List<DrugItem> drugItems1 = new ArrayList<>();
-//        drugItems1.add(drug1);
-//        drugItems1.add(drug3);
-//        drugItems1.add(drug4);
-//        drugItems1.add(drug2);
-//        List<DrugItem> drugItems2 = new ArrayList<>();
-//        drugItems2.add(drug5);
-//        drugItems2.add(drug3);
-//        drugItems2.add(drug2);
-//        drugItems2.add(drug2);
-//        List<DrugItem> drugItems3 = new ArrayList<>();
-//        drugItems3.add(drug4);
-//        drugItems3.add(drug5);
-//        drugItems3.add(drug3);
-//        drugItems3.add(drug1);
-//
-//        DrugBean d1 = new DrugBean();
-//        d1.setTitle("糖尿病");
-//        d1.setmList(drugItems1);
-//        DrugBean d2 = new DrugBean();
-//        d2.setTitle("高血压");
-//        d2.setmList(drugItems2);
-//        DrugBean d3 = new DrugBean();
-//        d3.setTitle("高血脂");
-//        d3.setmList(drugItems3);
-//        drugBeanList.add(d1);
-//        drugBeanList.add(d2);
-//        drugBeanList.add(d3);
-//        drugBeanList.add(d1);
-//        drugBeanList.add(d2);
-//        drugBeanList.add(d3);
-//        drugBeanList.add(d1);
-//        drugBeanList.add(d2);
-//        drugBeanList.add(d3);
-//        drugBeanList.add(d1);
-//        drugBeanList.add(d2);
-//        drugBeanList.add(d3);
-//        drugBeanList.add(d1);
-//        drugBeanList.add(d2);
-//        drugBeanList.add(d3);
-//        drugBeanList.add(d1);
-//        drugBeanList.add(d2);
-//        drugBeanList.add(d3);
-//        drugBeanList.add(d1);
-//        drugBeanList.add(d2);
-//        drugBeanList.add(d3);

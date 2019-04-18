@@ -4,9 +4,9 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import com.example.zhongahiyi.healthy.bean.news.ClassBean;
 import com.example.zhongahiyi.healthy.bean.news.Constant;
 import com.example.zhongahiyi.healthy.fragment.NewsListFragment;
+import com.example.zhongahiyi.healthy.bean.news.ClassBean;
 
 public class NewsFragmentAdapter extends FragmentPagerAdapter {
 

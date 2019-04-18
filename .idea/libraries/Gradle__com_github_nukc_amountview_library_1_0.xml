@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.nukc.amountview:library-1.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/library-1.0.aar/d73b2698f8e4bdabb6312863b99895cb/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/library-1.0.aar/d73b2698f8e4bdabb6312863b99895cb/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.nukc.amountview/library/1.0/33b6acfb7817fb3b7b2a0bfb605b59e894b695ae/library-1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

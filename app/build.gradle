@@ -9,6 +9,10 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            //选择要添加的对应CPU类型的so
+            abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a', 'x86'
+        }
     }
     buildTypes {
         release {
@@ -41,8 +45,13 @@ dependencies {
     implementation 'io.reactivex:rxjava:1.1.0'
     implementation 'com.novaapps:FloatingActionMenu:1.0'
     implementation 'org.michaelbel:bottomsheet:1.2.3'
+
     implementation 'cn.yipianfengye.android:zxing-library:2.2'
     implementation 'com.github.markushi:circlebutton:1.1'
     implementation 'com.github.nukc.amountview:library:1.0'
     implementation 'org.jetbrains:annotations-java5:15.0'
+
+    implementation project(path: ':ocr_ui')
+    implementation 'com.wenwenwen888:searchbox:1.0.1'
+
 }

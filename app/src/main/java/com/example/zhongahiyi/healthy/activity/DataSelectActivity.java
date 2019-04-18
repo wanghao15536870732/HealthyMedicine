@@ -128,7 +128,7 @@ public class DataSelectActivity extends AppCompatActivity implements View.OnClic
                 break;
             case R.id.button_right:
                 DBManager dbManager = new DBManager(DataSelectActivity.this);
-                SQLiteDatabase db1 = dbManager.getDatabase();
+                SQLiteDatabase db1 = dbManager.getDatabase(DataSelectActivity.this);
                 Cursor cursor = db1.query("durgclass", null, null, null, null, null, null);
                 if (cursor.moveToFirst()) {
                     do {

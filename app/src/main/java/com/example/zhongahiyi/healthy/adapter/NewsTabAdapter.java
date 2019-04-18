@@ -3,8 +3,8 @@ package com.example.zhongahiyi.healthy.adapter;
 import android.support.v4.view.PagerAdapter;
 import android.view.View;
 
-import com.example.zhongahiyi.healthy.bean.news.ClassBean;
 import com.example.zhongahiyi.healthy.bean.news.Constant;
+import com.example.zhongahiyi.healthy.bean.news.ClassBean;
 
 public class NewsTabAdapter extends PagerAdapter {
 

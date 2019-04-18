@@ -165,7 +165,7 @@ public class DrugDetailActivity extends AppCompatActivity {
     @SuppressLint("SetTextI18n")
     private void initContent(String name) {
         DBManager dbManager = new DBManager(MainActivity.getContext());
-        SQLiteDatabase db = dbManager.getDatabase();
+        SQLiteDatabase db = dbManager.getDatabase(MainActivity.getContext());
         Cursor cursor = db.rawQuery("select 说明书标题,药品类型,药品名称,药品汉语拼音,药品商品名称,药品英文名称" +
                 ",成份,性状, 功能主治,用法用量,禁忌,不良反应,注意事项,药物相互作用,药理作用,贮藏,包装,有效期,执行标准,批准文号," +
                 "说明书修订日期,生产企业,备注 from med where 药品名称 = ?", new String[]{name});

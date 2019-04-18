@@ -25,23 +25,27 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.example.zhongahiyi.healthy.R;
+import com.example.zhongahiyi.healthy.fragment.FragmentNews;
 import com.example.zhongahiyi.healthy.fragment.FragmentDrug;
 import com.example.zhongahiyi.healthy.fragment.FragmentInfo;
 import com.example.zhongahiyi.healthy.fragment.FragmentMain;
-import com.example.zhongahiyi.healthy.fragment.FragmentNews;
+
+import com.example.zhongahiyi.healthy.R;
 import com.mxn.soul.flowingdrawer_core.ElasticDrawer;
 import com.mxn.soul.flowingdrawer_core.FlowingDrawer;
 import com.uuzuche.lib_zxing.activity.CaptureActivity;
 import com.uuzuche.lib_zxing.activity.CodeUtils;
 import com.uuzuche.lib_zxing.activity.ZXingLibrary;
+import com.wyt.searchbox.SearchFragment;
+import com.wyt.searchbox.custom.IOnSearchClickListener;
 import com.ycl.tabview.library.TabView;
 import com.ycl.tabview.library.TabViewChild;
 
@@ -54,10 +58,9 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener,IOnSearchClickListener, Toolbar.OnMenuItemClickListener{
     public static final int TAKE_PHOTO = 1;
     public static final int CHOOSE_PHOTO = 2;
     private static final int REQUEST_CODE = 3;
@@ -73,6 +76,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private LinearLayout medialart;
     private static Context context;
 
+    private SearchFragment searchFragment;
     private int[] items = new int[]{
             R.string.take_photo,
             R.string.upload_from_phone
@@ -86,11 +90,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         return context;
     }
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         tabView = (TabView) findViewById(R.id.tabView);
         mDrawer = (FlowingDrawer) findViewById(R.id.drawerlayout);
         menuAvator = (CircleImageView) findViewById(R.id.menu_avator);
@@ -104,9 +108,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         info_name = findViewById(R.id.info_name);
         mAvator = (ImageView) findViewById(R.id.avator);
         ic_back = (ImageView) findViewById(R.id.back_menu);
+        searchFragment = SearchFragment.newInstance();
+        searchFragment.setOnSearchClickListener(this);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         ZXingLibrary.initDisplayOpinion(this);
+        toolbar.setOnMenuItemClickListener(this);
         initTabView();
         initDrawer();
         menuAvator.setOnClickListener(this);
@@ -298,6 +305,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         builder.show();
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main_menu,menu);
+        return true;
+    }
+
     private void openAlbum() {
         Intent intent = new Intent("android.intent.action.GET_CONTENT");
         intent.setType("image/*");
@@ -422,7 +435,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.feedback:
 
                 break;
-            default:
+                default:
                 break;
         }
     }
@@ -446,5 +459,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+
+    @Override
+    public void OnSearchClick(String keyword) {
+
+    }
+
+    @Override
+    public boolean onMenuItemClick(MenuItem menuItem) {
+        switch (menuItem.getItemId()){
+            case R.id.item_search:
+                searchFragment.showFragment(getSupportFragmentManager(), SearchFragment.TAG);
+                break;
+        }
+        return true;
     }
 }

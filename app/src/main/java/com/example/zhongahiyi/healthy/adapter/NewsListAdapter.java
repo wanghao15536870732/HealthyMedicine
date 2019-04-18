@@ -13,6 +13,8 @@ import com.bumptech.glide.Glide;
 import com.example.zhongahiyi.healthy.R;
 import com.example.zhongahiyi.healthy.bean.drug.NewsBean;
 import com.example.zhongahiyi.healthy.utils.WebUtil;
+//import WebUtil;
+
 //import com.example.zhongahiyi.healthy.utils.WebUtil;
 
 import java.util.List;

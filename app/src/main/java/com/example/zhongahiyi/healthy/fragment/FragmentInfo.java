@@ -34,12 +34,12 @@ public class FragmentInfo extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_info, container, false);
-
         minfoFragmentAdapter = new InfoFragmentAdapter(getFragmentManager());
         minfoTabAdopter = new InfoTabAdopter();
         mTabLayout = (TabLayout) view.findViewById(R.id.date_tabLayout);
         mViewPager = (ViewPager) view.findViewById(R.id.medcine_page);
         mViewPager.setAdapter(minfoFragmentAdapter);
+        mTabLayout.setSelectedTabIndicatorColor(getResources().getColor(R.color.colorPrimary));
         mTabLayout.setupWithViewPager(mViewPager);
         mTabLayout.setTabsFromPagerAdapter(minfoTabAdopter);
 
