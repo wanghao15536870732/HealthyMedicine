@@ -18,7 +18,7 @@
             android:id="@+id/ill_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="健康"
+            android:text="风热感冒"
             android:textSize="30dp"
             android:textStyle="bold"
             android:layout_marginLeft="10dp"
@@ -53,7 +53,7 @@
                 android:layout_height="100dp"
                 android:layout_marginLeft="50dp"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_happy"/>
+                android:src="@drawable/ic_unhappy"/>
         </LinearLayout>
     </android.support.design.widget.CollapsingToolbarLayout>
 

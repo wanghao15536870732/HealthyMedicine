@@ -1,41 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="80dp"-->
-    <!--android:orientation="horizontal">-->
+<?xml version="1.0" encoding="utf-8"?><!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--android:layout_width="match_parent"--><!--android:layout_height="80dp"--><!--android:orientation="horizontal">-->
 
-    <!--<ImageView-->
-        <!--android:id="@+id/search_image"-->
-        <!--android:layout_width="70dp"-->
-        <!--android:layout_height="70dp"-->
-        <!--android:layout_gravity="center"-->
-        <!--android:layout_marginLeft="20dp"/>-->
-    <!--<LinearLayout-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"-->
-        <!--android:gravity="center"-->
-        <!--android:orientation="vertical">-->
+<!--<ImageView--><!--android:id="@+id/search_image"--><!--android:layout_width="70dp"--><!--android:layout_height="70dp"--><!--android:layout_gravity="center"--><!--android:layout_marginLeft="20dp"/>--><!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:gravity="center"--><!--android:orientation="vertical">-->
 
-        <!--<TextView-->
-            <!--android:id="@+id/search_title"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:text="标题"-->
+<!--<TextView--><!--android:id="@+id/search_title"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:text="标题"-->
 
-            <!--android:textSize="20sp"-->
-            <!--android:textStyle="bold"/>-->
-        <!--<TextView-->
-            <!--android:id="@+id/search_content"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_marginTop="5dp"-->
-            <!--android:text="内容"-->
-            <!--/>-->
-    <!--</LinearLayout>-->
-<!--</LinearLayout>-->
+<!--android:textSize="20sp"--><!--android:textStyle="bold"/>--><!--<TextView--><!--android:id="@+id/search_content"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_marginTop="5dp"--><!--android:text="内容"--><!--/>--><!--</LinearLayout>--><!--</LinearLayout>-->
 
-<android.support.v7.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -43,23 +14,48 @@
     app:cardCornerRadius="4dp">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
         <ImageView
             android:id="@+id/search_image"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:scaleType="centerCrop"/>
+            android:scaleType="centerCrop" />
         <!--scaleType这个属性 ，可以让照片保持原有比例填充满ImageView-->
-        <TextView
-            android:id="@+id/search_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="5dp"
-            android:textSize="16sp"/>
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/search_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="10dp"
+                android:text="ddd"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <!--<ImageView-->
+            <!--android:id="@+id/hot_flower"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="100dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:src="@drawable/ic_hot_count" />-->
+
+            <TextView
+                android:id="@+id/hot_du"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:text="123"
+                android:textSize="10sp" />
+        </RelativeLayout>
     </LinearLayout>
 </android.support.v7.widget.CardView>

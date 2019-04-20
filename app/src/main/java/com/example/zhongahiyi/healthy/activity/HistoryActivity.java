@@ -39,7 +39,10 @@ public class HistoryActivity extends AppCompatActivity {
     private void initData() {
         history_items = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
-            history_items.add(new History_item("慢性乙肝（活动性）","http://news.youth.cn/sh/201704/W020170418489230052873.jpg","2017.0322"));
+            history_items.add(new History_item("慢性乙肝（活动性）","http://news.youth.cn/sh/201704/W020170418489230052873.jpg","20190415"));
+            history_items.add(new History_item("乙肝","http://ppe2xultq.bkt.clouddn.com/TIM%E5%9B%BE%E7%89%8720190418215326.png","20190416"));
+            history_items.add(new History_item("动脉硬化","http://ppe2xultq.bkt.clouddn.com/TIM%E5%9B%BE%E7%89%8720190418215243.png","20190418"));
+            history_items.add(new History_item("冠心病","http://ppe2xultq.bkt.clouddn.com/aaa.png","20190420"));
         }
     }
 }

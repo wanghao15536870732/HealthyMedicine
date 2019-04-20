@@ -40,6 +40,7 @@ public class SearchAdapter extends RecyclerView.Adapter<SearchAdapter.ViewHolder
         Search_item search_item = search_items.get(i);
         Glide.with(context).load(search_item.getUrl()).into(viewHolder.mImageView);
         viewHolder.title.setText(search_item.getName());
+        viewHolder.hot_du.setText(search_item.getHot_du());
         viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -54,13 +55,14 @@ public class SearchAdapter extends RecyclerView.Adapter<SearchAdapter.ViewHolder
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        private TextView title;
+        private TextView title,hot_du;
         private ImageView mImageView;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             title = (TextView) itemView.findViewById(R.id.search_title);
             mImageView = (ImageView) itemView.findViewById(R.id.search_image);
+            hot_du = (TextView)itemView.findViewById(R.id.hot_du);
         }
     }
 }
