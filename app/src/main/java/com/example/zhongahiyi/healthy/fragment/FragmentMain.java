@@ -1,4 +1,5 @@
 package com.example.zhongahiyi.healthy.fragment;
+
 import android.Manifest;
 import android.content.Intent;
 import android.os.Build;
@@ -28,6 +29,7 @@ import com.example.zhongahiyi.healthy.activity.MainActivity;
 import com.example.zhongahiyi.healthy.activity.RemindActivity;
 import com.example.zhongahiyi.healthy.activity.SearchActivity;
 import com.example.zhongahiyi.healthy.activity.RemindActivity;
+import com.example.zhongahiyi.healthy.activity.SettingActivity;
 import com.example.zhongahiyi.healthy.adapter.MyAdapter;
 import com.example.zhongahiyi.healthy.bean.main.Icon;
 
@@ -40,19 +42,21 @@ public class FragmentMain extends Fragment {
     private BaseAdapter mAdapter = null;
     private ArrayList<Icon> mData = null;
 
-    public static FragmentMain newInstance(String text){
-        FragmentMain fragmentCommon=new FragmentMain();
+    public static FragmentMain newInstance(String text) {
+        FragmentMain fragmentCommon = new FragmentMain();
         Bundle bundle = new Bundle();
-        bundle.putString("text",text);
+        bundle.putString("text", text);
         fragmentCommon.setArguments(bundle);
         return fragmentCommon;
     }
-    @Nullable @Override
+
+    @Nullable
+    @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view=inflater.inflate( R.layout.fragment_main,container,false);
+        View view = inflater.inflate(R.layout.fragment_main, container, false);
 
         grid_photo = (GridView) view.findViewById(R.id.grid_photo);
-        GridLayoutManager manager = new GridLayoutManager(getContext(),2);
+        GridLayoutManager manager = new GridLayoutManager(getContext(), 2);
         mData = new ArrayList<Icon>();
         mData.add(new Icon(R.color.two,R.drawable.ic_search, "搜索设置"));
         mData.add(new Icon(R.color.one,R.drawable.ic_feedback, "手动设置"));
@@ -65,16 +69,17 @@ public class FragmentMain extends Fragment {
             public void bindView(ViewHolder holder, Icon obj) {
                 holder.setImageResource(R.id.img_icon, obj.getiId());
                 holder.setText(R.id.txt_icon, obj.getiName());
-                holder.setbackgroudcolor(R.id.background_set,obj.getIcolor());
+                holder.setbackgroudcolor(R.id.background_set, obj.getIcolor());
             }
         };
         grid_photo.setAdapter(mAdapter);
+
         grid_photo.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                switch (position){
+                switch (position) {
                     case 0:
-                        startActivity(new Intent(getContext(), SearchActivity.class));
+//                        startActivity(new Intent(getContext(), SearchActivity.class));
                         break;
                     case 2:
                         startActivity(new Intent(getContext(), CollectActivity.class));
@@ -90,12 +95,14 @@ public class FragmentMain extends Fragment {
                        break;
                     default:
                         Toast.makeText(getContext(), "你点击了~" + position + "~项", Toast.LENGTH_SHORT).show();
+                    case 1:
+                        Intent intent = new Intent(getContext(), SettingActivity.class);
+                        startActivity(intent);
                         break;
+
                 }
             }
         });
-
         return view;
     }
-
 }

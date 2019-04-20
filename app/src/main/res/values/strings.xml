@@ -47,4 +47,5 @@
     <string name="copy_msg">已经复制链接地址到剪切板! </string>
     <string name="title_activity_data_select">DataSelectActivity</string>
     <string name="title_activity_collect">CollectActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
 </resources>
