@@ -25,7 +25,7 @@
     <LinearLayout
         android:id="@+id/activity_idcard"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
@@ -62,4 +62,41 @@
             android:textIsSelectable="true"
             android:textSize="16sp"/>
     </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_accurate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_15"
+        android:orientation="horizontal"
+        android:layout_below="@+id/activity_idcard">
+
+        <at.markushi.ui.CircleButton
+            android:id="@+id/button_right_accurate"
+            android:layout_width="64dp"
+            android:layout_height="@dimen/dp_64"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_right"
+            app:cb_color="@color/colorPrimary"
+            app:cb_pressedRingWidth="8dp" />
+
+        <at.markushi.ui.CircleButton
+            android:id="@+id/button_again_accurate"
+            android:layout_width="70dp"
+            android:layout_height="@dimen/dp_70"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="@dimen/dp_15"
+            android:src="@drawable/ic_camera"
+            app:cb_color="@color/colorPrimary"
+            app:cb_pressedRingWidth="8dp" />
+
+        <at.markushi.ui.CircleButton
+            android:id="@+id/button_wrong_accurate"
+            android:layout_width="70dp"
+            android:layout_height="@dimen/dp_70"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_wrong"
+            app:cb_color="@color/colorPrimary"
+            app:cb_pressedRingWidth="8dp" />
+    </RelativeLayout>
 </RelativeLayout>

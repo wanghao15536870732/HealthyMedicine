@@ -28,6 +28,7 @@ public class FragmentDrug extends Fragment {
     private RecyclerView mLeftRvRecyclerView;
     private RecyclerView mRightRvRecyclerView;
 
+
     private List<DrugBean> drugBeanList;
     private LeftAdapter leftAdapter;
     private RightAdapter rightAdapter;

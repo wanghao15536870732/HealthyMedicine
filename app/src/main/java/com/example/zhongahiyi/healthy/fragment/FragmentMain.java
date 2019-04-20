@@ -77,37 +77,25 @@ public class FragmentMain extends Fragment {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 switch (position) {
                     case 0:
-//                        startActivity(new Intent(getContext(), SearchActivity.class));
+                        startActivity(new Intent(getContext(), SearchActivity.class));
                         break;
                     case 1:
                         Intent intent = new Intent(getContext(), SettingActivity.class);
                         startActivity(intent);
                         break;
                     case 2:
-//                        startActivity(new Intent(getContext(), CollectActivity.class));
-                        grid_photo.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                            @Override
-                            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                                switch (position) {
-                                    case 0:
-                                        startActivity(new Intent(getContext(), SearchActivity.class));
-                                        break;
-                                    case 4:
-                                        startActivity(new Intent(getContext(), RemindActivity.class));
-                                        break;
-                                    case 5:
-                                        startActivity(new Intent(getContext(), AccurateActivity.class));
-                                        break;
-
-                                    default:
-                                        Toast.makeText(getContext(), "你点击了~" + position + "~项", Toast.LENGTH_SHORT).show();
-                                        break;
-                                }
-                            }
-
-                        });
-
-
+                        break;
+                    case 3:
+                        break;
+                    case 4:
+                        startActivity(new Intent(getContext(), RemindActivity.class));
+                        break;
+                    case 5:
+                        startActivity(new Intent(getContext(), AccurateActivity.class));
+                        break;
+                    default:
+                        Toast.makeText(getContext(), "你点击了~" + position + "~项", Toast.LENGTH_SHORT).show();
+                        break;
                 }
             }
         });

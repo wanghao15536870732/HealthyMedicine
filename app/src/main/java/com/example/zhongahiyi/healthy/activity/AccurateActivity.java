@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.support.annotation.Nullable;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -13,6 +14,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.baidu.ocr.sdk.OCR;
@@ -27,6 +29,8 @@ import com.example.zhongahiyi.healthy.R;
 
 import java.io.File;
 
+import at.markushi.ui.CircleButton;
+
 public class AccurateActivity extends AppCompatActivity {
 
     private boolean hasGotToken = false;
@@ -36,7 +40,9 @@ public class AccurateActivity extends AppCompatActivity {
     private TextView infoTextView;
     private ImageView imageView;
     private String filePath;
-    private StringBuilder sb = new StringBuilder(  );
+
+    private RelativeLayout relativeLayout;
+    private CircleButton button_against,button_right,button_back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,12 +53,28 @@ public class AccurateActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle("药单识别");
         alertDialog = new AlertDialog.Builder(this);
-
+        relativeLayout = (RelativeLayout) findViewById(R.id.bottom_accurate);
+        relativeLayout.setVisibility(View.GONE);
         //以license文件方式初始化
         initAccessToken();
         infoTextView = (TextView) findViewById(R.id.info_text_view);
         infoTextView.setTextIsSelectable( true );
         imageView = (ImageView) findViewById( R.id.image_view );
+        button_right = (CircleButton) findViewById(R.id.button_right);
+        button_against = (CircleButton) findViewById(R.id.button_again);
+        button_back = (CircleButton) findViewById(R.id.button_wrong);
+        button_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+        button_against.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
         findViewById(R.id.camera_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -169,8 +191,8 @@ public class AccurateActivity extends AppCompatActivity {
             Bitmap bitmap = BitmapFactory.decodeFile( filePath );
             imageView.setImageBitmap( bitmap );
             recGeneral(filePath);
-
         }
+        relativeLayout.setVisibility(View.VISIBLE);
     }
 
     @Override

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\HealthyMedicine\\ocr_ui\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-v17\\values-v17.xml",
+            "outputFile": "F:\\git project\\HealthyMedicine\\ocr_ui\\build\\intermediates\\res\\merged\\release\\values-v17\\values-v17.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\王教授\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.1.aar\\3df536db2aea52e4d9af7cdff29a0b40\\res\\values-v17\\values-v17.xml",
+                    "source": "C:\\Users\\DeepBlue\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.1.aar\\f3113a3f09c1c09f969985b6d0be7bb5\\res\\values-v17\\values-v17.xml",
                     "from": {
                         "startLines": "2,5,9,12,15,18,22,26,29,32,35,39,42,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -17,10 +17,10 @@
             ]
         },
         {
-            "outputFile": "D:\\HealthyMedicine\\ocr_ui\\build\\intermediates\\res\\merged\\release\\values-v17\\values-v17.xml",
+            "outputFile": "F:\\git project\\HealthyMedicine\\ocr_ui\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-v17\\values-v17.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\王教授\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.1.aar\\3df536db2aea52e4d9af7cdff29a0b40\\res\\values-v17\\values-v17.xml",
+                    "source": "C:\\Users\\DeepBlue\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.1.aar\\f3113a3f09c1c09f969985b6d0be7bb5\\res\\values-v17\\values-v17.xml",
                     "from": {
                         "startLines": "2,5,9,12,15,18,22,26,29,32,35,39,42,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
