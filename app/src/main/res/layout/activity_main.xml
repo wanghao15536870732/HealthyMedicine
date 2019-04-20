@@ -57,7 +57,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
                         android:maxLines="1"
-                        android:text="今天吃药了吗"
+                        android:text="吃药了吗"
                         android:textColor="@color/white"
                         android:textSize="15sp" />
                 </LinearLayout>
