@@ -54,9 +54,16 @@ public class InfoListFragment extends Fragment implements SwipeRefreshLayout.OnR
     public void initData() {
         //FloatingActionMenu menu = (FloatingActionMenu)view.findViewById()
         info_items = new ArrayList<>();
-        for (int i = 0; i < 5; i++) {
-            info_items.add(new Info_item(R.drawable.ic_pitch_off, "阿莫西林", "12.00", "1片"));
-        }
+            info_items.add(new Info_item(R.drawable.ic_pitch_off, "阿莫西林", "09:00", "1片"));
+            info_items.add(new Info_item(R.drawable.ic_pitch_off, "感冒水", "09:00", "5ml"));
+            info_items.add(new Info_item(R.drawable.ic_pitch_off, "感冒舒颗粒", "09:00", "15克"));
+            info_items.add(new Info_item(R.drawable.ic_pitch_off, "阿莫西林", "13:00", "1片"));
+            info_items.add(new Info_item(R.drawable.ic_pitch_off, "感冒水", "13:00", "5ml"));
+            info_items.add(new Info_item(R.drawable.ic_pitch_off, "感冒舒颗粒", "13:00", "15克"));
+            info_items.add(new Info_item(R.drawable.ic_pitch_off, "阿莫西林", "19:00", "1片"));
+            info_items.add(new Info_item(R.drawable.ic_pitch_off, "感冒水", "19:00", "5ml"));
+            info_items.add(new Info_item(R.drawable.ic_pitch_off, "感冒舒颗粒", "19:00", "15克"));
+
     }
 
     @Override
