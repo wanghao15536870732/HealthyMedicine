@@ -43,7 +43,7 @@ public class SearchActivity extends AppCompatActivity implements View.OnClickLis
     private ImageView voice;
     //有动画效果
     private RecognizerDialog iatDialog;
-    private RelativeLayout relativeLayout;
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -52,7 +52,7 @@ public class SearchActivity extends AppCompatActivity implements View.OnClickLis
         recyclerView = (RecyclerView) findViewById(R.id.search_recyle);
         delte_image = (ImageView) findViewById(R.id.ivDeleteText);
         editText = (EditText) findViewById(R.id.etSearch);
-        relativeLayout = (RelativeLayout)findViewById(R.id.rlSearchFrameDelete);
+
         initData();
 
         editText.addTextChangedListener(new TextWatcher() {
@@ -94,7 +94,7 @@ public class SearchActivity extends AppCompatActivity implements View.OnClickLis
     }
 
     private void initData() {
-        //relativeLayout.setVisibility(View.GONE);
+
         search_items = new ArrayList<>();
         search_items.add(new Search_item("小儿复方氨酚烷胺片",
                 "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3326255130,820597129&fm=26&gp=0.jpg","4398浏览"));

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Healthy</string>
+    <string name="app_name">吃药了吗</string>
     <string name="drug_info">补益肝肾，清热明目。用于肝肾两亏，虚火上炎引起：内外翳障，瞳仁散大，视力减退，夜盲昏花，目涩羞明，迎风流泪</string>
     <string name="take_photo">拍照</string>
     <string name="upload_from_phone">从手机相册选择</string>

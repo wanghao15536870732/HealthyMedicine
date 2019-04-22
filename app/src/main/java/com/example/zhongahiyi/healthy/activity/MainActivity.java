@@ -31,6 +31,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.example.zhongahiyi.healthy.fragment.FragmentNews;
@@ -75,6 +76,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Uri imagUri;
     private LinearLayout medialart;
     private static Context context;
+    private RelativeLayout relativeLayout;
 
     private SearchFragment searchFragment;
     private int[] items = new int[]{
@@ -94,7 +96,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        relativeLayout = (RelativeLayout)findViewById(R.id.rlSearchFrameDelete);
         tabView = (TabView) findViewById(R.id.tabView);
         mDrawer = (FlowingDrawer) findViewById(R.id.drawerlayout);
         menuAvator = (CircleImageView) findViewById(R.id.menu_avator);

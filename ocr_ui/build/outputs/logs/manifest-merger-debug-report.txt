@@ -54,7 +54,7 @@ ADDED from D:\HealthyMedicine\ocr_ui\src\main\AndroidManifest.xml:14:5-25:19
 	android:vmSafeMode
 		ADDED from D:\HealthyMedicine\ocr_ui\src\main\AndroidManifest.xml:18:18-43
 	android:icon
-		ADDED from D:\HealthyMedicine\ocr_ui\src\main\AndroidManifest.xml:16:18-52
+		ADDED from D:\HealthyMedicine\ocr_ui\src\main\AndroidManifest.xml:16:18-50
 	android:allowBackup
 		ADDED from D:\HealthyMedicine\ocr_ui\src\main\AndroidManifest.xml:14:18-44
 	android:theme

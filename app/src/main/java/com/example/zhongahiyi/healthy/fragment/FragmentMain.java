@@ -58,12 +58,12 @@ public class FragmentMain extends Fragment {
         grid_photo = (GridView) view.findViewById(R.id.grid_photo);
         GridLayoutManager manager = new GridLayoutManager(getContext(), 2);
         mData = new ArrayList<Icon>();
-        mData.add(new Icon(R.color.two,R.drawable.ic_search, "搜索设置"));
-        mData.add(new Icon(R.color.one,R.drawable.ic_feedback, "手动设置"));
-        mData.add(new Icon(R.color.five,R.drawable.ic_collect, "我的收藏"));
-        mData.add(new Icon(R.color.three,R.drawable.ic_history, "生病历史"));
-        mData.add(new Icon(R.color.six,R.drawable.ic_remind, "服药提醒"));
-        mData.add(new Icon(R.color.four,R.drawable.ic_camera_scan, "药单扫描"));
+        mData.add(new Icon(R.color.two, R.drawable.ic_search, "搜索设置"));
+        mData.add(new Icon(R.color.one, R.drawable.ic_feedback, "手动设置"));
+        mData.add(new Icon(R.color.five, R.drawable.ic_collect, "我的收藏"));
+        mData.add(new Icon(R.color.three, R.drawable.ic_history, "生病历史"));
+        mData.add(new Icon(R.color.six, R.drawable.ic_remind, "服药提醒"));
+        mData.add(new Icon(R.color.four, R.drawable.ic_camera_scan, "药单扫描"));
         mAdapter = new MyAdapter<Icon>(mData, R.layout.main_item_grid) {
             @Override
             public void bindView(ViewHolder holder, Icon obj) {
@@ -79,7 +79,7 @@ public class FragmentMain extends Fragment {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 switch (position) {
                     case 0:
-//                        startActivity(new Intent(getContext(), SearchActivity.class));
+                        startActivity(new Intent(getContext(), SearchActivity.class));
                         break;
                     case 2:
                         startActivity(new Intent(getContext(), CollectActivity.class));
@@ -91,8 +91,8 @@ public class FragmentMain extends Fragment {
                         startActivity(new Intent(getContext(), RemindActivity.class));
                         break;
                     case 5:
-                       startActivity(new Intent(getContext(), AccurateActivity.class));
-                       break;
+                        startActivity(new Intent(getContext(), AccurateActivity.class));
+                        break;
                     default:
                         Toast.makeText(getContext(), "你点击了~" + position + "~项", Toast.LENGTH_SHORT).show();
                     case 1:
