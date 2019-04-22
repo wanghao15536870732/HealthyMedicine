@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.ycl.tabview.library:tabviewlibrary:1.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/tabviewlibrary-1.0.aar/21a3a1ba09aba810b3383f739f57bceb/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/tabviewlibrary-1.0.aar/21a3a1ba09aba810b3383f739f57bceb/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ycl.tabview.library/tabviewlibrary/1.0/ef97175ed0704264ca6023d57281bf16b1126f0a/tabviewlibrary-1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

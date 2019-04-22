@@ -81,6 +81,10 @@ public class FragmentMain extends Fragment {
                     case 0:
                         startActivity(new Intent(getContext(), SearchActivity.class));
                         break;
+                    case 1:
+                        Intent intent = new Intent(getContext(), SettingActivity.class);
+                        startActivity(intent);
+                        break;
                     case 2:
                         startActivity(new Intent(getContext(), CollectActivity.class));
                         break;
@@ -95,10 +99,6 @@ public class FragmentMain extends Fragment {
                         break;
                     default:
                         Toast.makeText(getContext(), "你点击了~" + position + "~项", Toast.LENGTH_SHORT).show();
-                    case 1:
-                        Intent intent = new Intent(getContext(), SettingActivity.class);
-                        startActivity(intent);
-                        break;
 
                 }
             }

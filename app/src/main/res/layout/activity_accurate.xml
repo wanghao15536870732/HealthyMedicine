@@ -33,33 +33,70 @@ xmlns:app="http://schemas.android.com/apk/res-auto">
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:layout_below="@+id/action_bar_acc">
 
-    <Button
-        android:text="拍照"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/camera_button"
-        tools:ignore="HardcodedText"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        android:background="@drawable/selector_btn"/>
+        <Button
+            android:text="拍照"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/camera_button"
+            tools:ignore="HardcodedText"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:background="@drawable/selector_btn"/>
 
-    <ImageView
-        android:id="@+id/image_view"
-        android:layout_width="match_parent"
-        android:layout_height="180dp"
-        android:layout_marginTop="20dp"
-        android:scaleType="centerInside"
-        android:background="@drawable/rounded_rectangle"
-        android:visibility="gone"/>
-    <TextView
-        android:id="@+id/info_text_view"
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerInside"
+            android:background="@drawable/rounded_rectangle"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/info_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_rectangle"
+            android:layout_marginTop="10dp"
+            android:scrollbars="vertical"
+            android:singleLine="false"
+            android:textIsSelectable="true"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_accurate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/rounded_rectangle"
-        android:layout_marginTop="10dp"
-        android:scrollbars="vertical"
-        android:singleLine="false"
-        android:textIsSelectable="true"
-        android:textSize="16sp"/>
-</LinearLayout>
+        android:layout_margin="@dimen/dp_15"
+        android:orientation="horizontal"
+        android:layout_below="@+id/activity_idcard">
+
+        <at.markushi.ui.CircleButton
+            android:id="@+id/button_right_accurate"
+            android:layout_width="64dp"
+            android:layout_height="@dimen/dp_64"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_right"
+            app:cb_color="@color/colorPrimary"
+            app:cb_pressedRingWidth="8dp" />
+
+        <at.markushi.ui.CircleButton
+            android:id="@+id/button_again_accurate"
+            android:layout_width="70dp"
+            android:layout_height="@dimen/dp_70"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="@dimen/dp_15"
+            android:src="@drawable/ic_camera"
+            app:cb_color="@color/colorPrimary"
+            app:cb_pressedRingWidth="8dp" />
+
+        <at.markushi.ui.CircleButton
+            android:id="@+id/button_wrong_accurate"
+            android:layout_width="70dp"
+            android:layout_height="@dimen/dp_70"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_wrong"
+            app:cb_color="@color/colorPrimary"
+            app:cb_pressedRingWidth="8dp" />
+    </RelativeLayout>
 </RelativeLayout>

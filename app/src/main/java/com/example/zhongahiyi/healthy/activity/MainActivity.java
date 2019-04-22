@@ -9,6 +9,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
@@ -34,6 +35,8 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.zhongahiyi.healthy.db.DBManager;
 import com.example.zhongahiyi.healthy.fragment.FragmentNews;
 import com.example.zhongahiyi.healthy.fragment.FragmentDrug;
 import com.example.zhongahiyi.healthy.fragment.FragmentInfo;
