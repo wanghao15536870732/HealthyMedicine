@@ -55,6 +55,7 @@ public class FragmentDrug extends Fragment {
         mRightRvRecyclerView.setAdapter(rightAdapter);
         mLeftRvRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         mRightRvRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+
         mLeftRvRecyclerView.addOnItemTouchListener(new SimpleClickListener() {
             @Override
             public void onItemClick(BaseQuickAdapter baseQuickAdapter, View view, int i) {
@@ -87,12 +88,12 @@ public class FragmentDrug extends Fragment {
     private void initData() {
         drugBeanList = new ArrayList<>();
         listBeanList = new ArrayList<>();
-        DBManager dbManager = new DBManager(MainActivity.getContext());
+        DBManager dbManager = new DBManager(getContext());
         DrugItem drugItem;
         DrugItem drugItems;
 //        List<DrugItem> drugItems1 = new ArrayList<>();
         DrugBean drugBean1;
-        SQLiteDatabase db1 = dbManager.getDatabase(MainActivity.getContext());
+        SQLiteDatabase db1 = dbManager.getDatabase(getContext());
         Cursor cursor = db1.rawQuery("select jibing from durgclass", null);
         while (cursor.moveToNext()) {
             List<DrugItem> drugItems1 = new ArrayList<>();
@@ -115,9 +116,6 @@ public class FragmentDrug extends Fragment {
                             if (drug_leibie.isEmpty()) {
                                 drug_leibie = " ";
                             }
-//                            Log.e("TAG", drug_name);
-//                            Log.e("TAG", drug_leibie);
-//                            Log.e("TAG", dur_pic);
                             drugItem = new DrugItem(dur_pic, drug_name, drug_leibie);
                             drugItems1.add(drugItem);
                         } catch (Exception e) {

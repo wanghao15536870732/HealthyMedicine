@@ -40,7 +40,6 @@ public class AccurateActivity extends AppCompatActivity {
     private TextView infoTextView;
     private ImageView imageView;
     private String filePath;
-
     private RelativeLayout relativeLayout;
     private CircleButton button_against,button_right,button_back;
 
@@ -60,9 +59,9 @@ public class AccurateActivity extends AppCompatActivity {
         infoTextView = (TextView) findViewById(R.id.info_text_view);
         infoTextView.setTextIsSelectable( true );
         imageView = (ImageView) findViewById( R.id.image_view );
-        button_right = (CircleButton) findViewById(R.id.button_right);
-        button_against = (CircleButton) findViewById(R.id.button_again);
-        button_back = (CircleButton) findViewById(R.id.button_wrong);
+        button_right = (CircleButton) findViewById(R.id.button_right_accurate);
+        button_against = (CircleButton) findViewById(R.id.button_again_accurate);
+        button_back = (CircleButton) findViewById(R.id.button_wrong_accurate);
         button_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
