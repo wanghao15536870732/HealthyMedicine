@@ -39,8 +39,7 @@ public class DBManager {
             }
             //关闭输入输出流
             fileOutputStream.flush();
-            fileOutputStream.close();
-            inputStream.close();
+            fileOutputStream.close();            inputStream.close();
         }
 
         return getDatabase(context);//存储完成之后从新调用这个函数返回数据库文件

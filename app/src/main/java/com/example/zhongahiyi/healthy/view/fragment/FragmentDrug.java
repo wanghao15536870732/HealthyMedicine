@@ -88,6 +88,7 @@ public class FragmentDrug extends Fragment {
         DrugItem drug4 = new DrugItem(R.drawable.drug4,"硝苯地平控释片","1．高血压 2．冠心病 慢性稳定型心绞痛(劳累性心绞痛)");
         DrugItem drug5 = new DrugItem(R.drawable.drug5,"阿卡波糖片","配合饮食控制治疗糖尿病。");
         DrugItem drug6 = new DrugItem(R.drawable.drug6,"尼莫地平片","可预防和治疗由于动脉瘤性蛛网膜下腔出血后脑血管痉挛引起的缺血性神经损伤。");
+
         //病的种类
         List<DrugItem> drugItems1 = new ArrayList<>(  );
         drugItems1.add( drug1 );
@@ -103,7 +104,7 @@ public class FragmentDrug extends Fragment {
         drugItems3.add( drug4 );
         drugItems3.add( drug5 );
         drugItems3.add( drug3);
-        drugItems3.add( drug1 );
+        drugItems3.add( drug6 );
 
         DrugBean d1 = new DrugBean();
         d1.setTitle( "糖尿病" );
@@ -115,24 +116,6 @@ public class FragmentDrug extends Fragment {
         d3.setTitle( "高血脂" );
         d3.setmList( drugItems3);
 
-        drugBeanList.add( d1 );
-        drugBeanList.add( d2 );
-        drugBeanList.add( d3 );
-        drugBeanList.add( d1 );
-        drugBeanList.add( d2 );
-        drugBeanList.add( d3 );
-        drugBeanList.add( d1 );
-        drugBeanList.add( d2 );
-        drugBeanList.add( d3 );
-        drugBeanList.add( d1 );
-        drugBeanList.add( d2 );
-        drugBeanList.add( d3 );
-        drugBeanList.add( d1 );
-        drugBeanList.add( d2 );
-        drugBeanList.add( d3 );
-        drugBeanList.add( d1 );
-        drugBeanList.add( d2 );
-        drugBeanList.add( d3 );
         drugBeanList.add( d1 );
         drugBeanList.add( d2 );
         drugBeanList.add( d3 );

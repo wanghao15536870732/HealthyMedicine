@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mImageView.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity( new Intent( MainActivity.this,LoginActivity.class ) );
+                //startActivity( new Intent( MainActivity.this,LoginActivity.class ) );
             }
         } );
     }
