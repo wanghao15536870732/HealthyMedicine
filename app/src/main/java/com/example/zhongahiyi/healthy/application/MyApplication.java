@@ -12,7 +12,7 @@ public class MyApplication extends Application {
     public void onCreate() {
         super.onCreate();
         SpeechUtility.createUtility(this, SpeechConstant.APPID + "=5cb08cee");
-        RecognitionManager.getSingleton().init(this,"5cb08cee");
-        SynthesisManager.getSingleton().init(this,"5cb08cee");
+        RecognitionManager.getSingleton().init(this, "5cb08cee");
+        SynthesisManager.getSingleton().init(this, "5cb08cee");
     }
 }

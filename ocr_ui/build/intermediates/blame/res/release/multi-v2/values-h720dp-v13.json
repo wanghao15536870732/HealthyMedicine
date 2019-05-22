@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\git project\\HealthyMedicine\\ocr_ui\\build\\intermediates\\res\\merged\\release\\values-h720dp-v13\\values-h720dp-v13.xml",
+            "outputFile": "/home/deepblue/桌面/git/HealthyMedicine/ocr_ui/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-h720dp-v13/values-h720dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\DeepBlue\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.1.aar\\f3113a3f09c1c09f969985b6d0be7bb5\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
+                    "source": "/home/deepblue/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.1.1.aar/544fff552a1c1c0517a008f3c325a1e6/res/values-h720dp-v13/values-h720dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -16,10 +16,10 @@
             ]
         },
         {
-            "outputFile": "F:\\git project\\HealthyMedicine\\ocr_ui\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-h720dp-v13\\values-h720dp-v13.xml",
+            "outputFile": "/home/deepblue/桌面/git/HealthyMedicine/ocr_ui/build/intermediates/res/merged/release/values-h720dp-v13/values-h720dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\DeepBlue\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.1.aar\\f3113a3f09c1c09f969985b6d0be7bb5\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
+                    "source": "/home/deepblue/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.1.1.aar/544fff552a1c1c0517a008f3c325a1e6/res/values-h720dp-v13/values-h720dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
